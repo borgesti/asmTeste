@@ -1,0 +1,480 @@
+{
+  "customId": "listadenuncias",
+  "queryName": "qryListaDenuncias",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "ASM_Denuncia",
+  "entityFullName": "asm.entity.ASM_Denuncia",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "ASM_Denuncia",
+        "namespace": "asm.entity.ASM_Denuncia",
+        "alias": "a"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "a",
+        "type": "string"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": {
+      "type": "server",
+      "blocklyMethod": "obterNumeroSequencial",
+      "blocklyClass": "blockly.BlocoDenuncia",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "denuncia\u0026lt;asm.entity.ASM_Denuncia\u0026gt;",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.BlocoDenuncia",
+        "sourcePath": "src/main/java/blockly/BlocoDenuncia.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "obterNumeroSequencial",
+            "hasReturn": "true",
+            "params": [
+              "denuncia\u0026lt;asm.entity.ASM_Denuncia\u0026gt;"
+            ]
+          },
+          {
+            "name": "validacoesFormularioDenuncia",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "navegarEntre Abas",
+            "hasReturn": "true",
+            "params": [
+              "abaAtual",
+              "proximaAba"
+            ]
+          }
+        ]
+      }
+    },
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "ide_denuncia": null,
+    "login_inclusao_denuncia": {
+      "type": "server",
+      "blocklyMethod": "obterUsuarioLogado",
+      "blocklyClass": "blockly.GeralServerSide",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.GeralServerSide",
+        "sourcePath": "src/main/java/blockly/GeralServerSide.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "obterUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "data_criacao": {
+      "type": "server",
+      "blocklyMethod": "obterDataHoraAtual",
+      "blocklyClass": "blockly.GeralServerSide",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.GeralServerSide",
+        "sourcePath": "src/main/java/blockly/GeralServerSide.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "obterUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "obterDataHoraAtual",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "numero_registro": "\"Gerado\"",
+    "nome_caso": null,
+    "denunciante_nome": null,
+    "denunciante_sexo": null,
+    "denunciante_cpf": null,
+    "denunciante_telefone": null,
+    "denunciante_email": null,
+    "denunciante_escolaridade": null,
+    "denunciante_cep": null,
+    "denunciante_endereco": null,
+    "denunciante_bairro": null,
+    "denunciante_cidade": null,
+    "denunciante_uf": null,
+    "fato_ocorrido": null,
+    "data_ocorrencia": null,
+    "des_origem_denuncia": null,
+    "ind_violencia_emocional": null,
+    "ind_violencia_psicologica": null,
+    "ind_violencia_moral": null,
+    "ind_violencia_fisica": null,
+    "ind_violencia_sexual": null,
+    "ind_violencia_patrimonial": null,
+    "ind_violencia_politica_genero": null,
+    "ind_violencia_institucional": null,
+    "ind_assedio_moral": null,
+    "ind_assedio_sexual": null,
+    "ind_violencia_domestica": null,
+    "ind_abuso_sexual_ca": null,
+    "ind_abuso_fisico_ca": null,
+    "ind_feminicidio": null,
+    "ind_irregularidade_processo": null,
+    "ind_ameaca_morte": null,
+    "ind_tentativa_feminicidio": null,
+    "ind_injuria_racial": null,
+    "ind_outra_violencia": null,
+    "des_outra_violencia": null,
+    "ind_alienacao_parental": null,
+    "ind_violencia_continuada": null,
+    "texto_material_online": null,
+    "ind_denunciante_vitima": "true",
+    "vitima_nome": null,
+    "vitima_sexo": null,
+    "vitima_cpf": null,
+    "vitima_telefone": null,
+    "vitima_email": null,
+    "vitima_escolaridade": null,
+    "vitima_cep": null,
+    "vitima_endereco": null,
+    "vitima_bairro": null,
+    "vitima_cidade": null,
+    "vitima_uf": null
+  },
+  "defaultValuesProperties": {
+    "ide_denuncia": null,
+    "login_inclusao_denuncia": null,
+    "data_criacao": null,
+    "numero_registro": null,
+    "nome_caso": null,
+    "denunciante_nome": null,
+    "denunciante_sexo": null,
+    "denunciante_cpf": null,
+    "denunciante_telefone": null,
+    "denunciante_email": null,
+    "denunciante_escolaridade": null,
+    "denunciante_cep": null,
+    "denunciante_endereco": null,
+    "denunciante_bairro": null,
+    "denunciante_cidade": null,
+    "denunciante_uf": null,
+    "fato_ocorrido": null,
+    "data_ocorrencia": null,
+    "des_origem_denuncia": null,
+    "ind_violencia_emocional": null,
+    "ind_violencia_psicologica": null,
+    "ind_violencia_moral": null,
+    "ind_violencia_fisica": null,
+    "ind_violencia_sexual": null,
+    "ind_violencia_patrimonial": null,
+    "ind_violencia_politica_genero": null,
+    "ind_violencia_institucional": null,
+    "ind_assedio_moral": null,
+    "ind_assedio_sexual": null,
+    "ind_violencia_domestica": null,
+    "ind_abuso_sexual_ca": null,
+    "ind_abuso_fisico_ca": null,
+    "ind_feminicidio": null,
+    "ind_irregularidade_processo": null,
+    "ind_ameaca_morte": null,
+    "ind_tentativa_feminicidio": null,
+    "ind_injuria_racial": null,
+    "ind_outra_violencia": null,
+    "des_outra_violencia": null,
+    "ind_alienacao_parental": null,
+    "ind_violencia_continuada": null,
+    "texto_material_online": null,
+    "ind_denunciante_vitima": null,
+    "vitima_nome": null,
+    "vitima_sexo": null,
+    "vitima_cpf": null,
+    "vitima_telefone": null,
+    "vitima_email": null,
+    "vitima_escolaridade": null,
+    "vitima_cep": null,
+    "vitima_endereco": null,
+    "vitima_bairro": null,
+    "vitima_cidade": null,
+    "vitima_uf": null
+  },
+  "security": {
+    "ide_denuncia": null,
+    "login_inclusao_denuncia": null,
+    "data_criacao": null,
+    "numero_registro": null,
+    "nome_caso": null,
+    "denunciante_nome": null,
+    "denunciante_sexo": null,
+    "denunciante_cpf": null,
+    "denunciante_telefone": null,
+    "denunciante_email": null,
+    "denunciante_escolaridade": null,
+    "denunciante_cep": null,
+    "denunciante_endereco": null,
+    "denunciante_bairro": null,
+    "denunciante_cidade": null,
+    "denunciante_uf": null,
+    "fato_ocorrido": null,
+    "data_ocorrencia": null,
+    "des_origem_denuncia": null,
+    "ind_violencia_emocional": null,
+    "ind_violencia_psicologica": null,
+    "ind_violencia_moral": null,
+    "ind_violencia_fisica": null,
+    "ind_violencia_sexual": null,
+    "ind_violencia_patrimonial": null,
+    "ind_violencia_politica_genero": null,
+    "ind_violencia_institucional": null,
+    "ind_assedio_moral": null,
+    "ind_assedio_sexual": null,
+    "ind_violencia_domestica": null,
+    "ind_abuso_sexual_ca": null,
+    "ind_abuso_fisico_ca": null,
+    "ind_feminicidio": null,
+    "ind_irregularidade_processo": null,
+    "ind_ameaca_morte": null,
+    "ind_tentativa_feminicidio": null,
+    "ind_injuria_racial": null,
+    "ind_outra_violencia": null,
+    "des_outra_violencia": null,
+    "ind_alienacao_parental": null,
+    "ind_violencia_continuada": null,
+    "texto_material_online": null,
+    "ind_denunciante_vitima": null,
+    "vitima_nome": null,
+    "vitima_sexo": null,
+    "vitima_cpf": null,
+    "vitima_telefone": null,
+    "vitima_email": null,
+    "vitima_escolaridade": null,
+    "vitima_cep": null,
+    "vitima_endereco": null,
+    "vitima_bairro": null,
+    "vitima_cidade": null,
+    "vitima_uf": null
+  },
+  "calcFields": {
+    "numeroNomeCasoLoginInclusao": {
+      "type": "server",
+      "blocklyMethod": "concatenaNumeroNomeCasoLogin",
+      "blocklyClass": "blockly.BlocoAcompanhamento",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "denuncia\u0026lt;asm.entity.ASM_Denuncia\u0026gt;",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.BlocoAcompanhamento",
+        "sourcePath": "src/main/java/blockly/BlocoAcompanhamento.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "concatenaNumeroNomeCasoLogin",
+            "hasReturn": "true",
+            "params": [
+              "denuncia\u0026lt;asm.entity.ASM_Denuncia\u0026gt;"
+            ]
+          },
+          {
+            "name": "retornaCampoInformado",
+            "hasReturn": "true",
+            "params": [
+              "acompanhamento\u0026lt;asm.entity.ASM_Acompanhamento\u0026gt;",
+              "denuncia\u0026lt;asm.entity.ASM_Denuncia\u0026gt;"
+            ]
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "qtd_anexos": {
+      "type": "server",
+      "blocklyMethod": "obterQtdAnexosDenuncia",
+      "blocklyClass": "blockly.ArquivoDenuncia",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "ideDenuncia",
+          "value": "data.ide_denuncia",
+          "type": "CONSTANT"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.ArquivoDenuncia",
+        "sourcePath": "src/main/java/blockly/ArquivoDenuncia.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "excluirAnexoDenuncia",
+            "hasReturn": "true",
+            "params": [
+              "ideArquivo"
+            ]
+          },
+          {
+            "name": "salvarArquivo",
+            "hasReturn": "false",
+            "params": [
+              "path",
+              "ideDenuncia"
+            ]
+          },
+          {
+            "name": "salvarArquivoDenuncia",
+            "hasReturn": "true",
+            "params": [
+              "path",
+              "ideDenuncia"
+            ]
+          },
+          {
+            "name": "exibicaoGradeAnexoDocumento",
+            "hasReturn": "true",
+            "params": [
+              "ideDenuncia"
+            ]
+          },
+          {
+            "name": "obterQtdAnexosDenuncia",
+            "hasReturn": "true",
+            "params": [
+              "ideDenuncia"
+            ]
+          },
+          {
+            "name": "obterIdeDenuncia",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "definirIdeDenuncia",
+            "hasReturn": "false",
+            "params": [
+              "ideDenuncia"
+            ]
+          },
+          {
+            "name": "excluirAnexo",
+            "hasReturn": "true",
+            "params": [
+              "ideArquivo"
+            ]
+          },
+          {
+            "name": "uploadArquivo",
+            "hasReturn": "true",
+            "params": [
+              "dados",
+              "ideDenuncia"
+            ]
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    }
+  },
+  "calcFieldsSecurity": {
+    "numeroNomeCasoLoginInclusao": null,
+    "qtd_anexos": null
+  },
+  "calcFieldsProperties": {
+    "numeroNomeCasoLoginInclusao": {
+      "type": "String"
+    },
+    "qtd_anexos": {
+      "type": "String"
+    }
+  },
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/asm/query697618/",
+  "audit": false
+}

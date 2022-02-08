@@ -1,0 +1,61 @@
+<div class="jumbotron-fluid main-title topoAplicacao" id="pic-menu-global" data-component="crn-menu-header-pic">
+</div>
+
+<div class="modal fade" id="modal11950" ng-init="cronapi.screen.showModal('modal11950')">
+ <div class="modal-dialog">
+   <div class="modal-content">
+     <div class="component-holder modal-header">
+       <div class="list-group list-group-sm row">
+         <div data-container="true" data-replace="true">
+               <div class="list-group list-group-sm row">
+                 <div data-container="true" data-replace="true">
+                    <h4 class="modal-title" id="pic-id-13">Login do sistema</h4>
+                 </div>
+               </div>
+         </div>
+       </div>
+      </div>
+      <div class="modal-body">
+<div id="pic-id-10" class="helper-alert alert alert-dismissible alert-info" data-pic-active="Alert"><span class="glyphicon glyphicon-info-sign" aria-hidden="true" aria-label="Informação"></span><button type="button" class="close" data-dismiss="alert" aria-label="Fechar"><span aria-hidden="true">×</span></button><p class="helper-text">Informe o usuário e senha</p></div>
+       <div class="list-group list-group-sm row center-align">
+         <div data-container="true" data-replace="true">         
+            <div class="login-panel align-center" data-container="true">
+                    <form class="form-validation" autocomplete="off" name="form" ng-submit="login();" role="form">
+                        <input type="hidden" name="csrf_token" value="CIwNZNlR4XbisJF39I8yWnWX9wX4WFoz">
+                        <div class="text-danger wrapper text-center" ng-show="authError"></div>
+                        <div class="col-xs-10 col-md-8 col-md-push-2 col-xs-push-1" data-container="true">
+                            <ul class="list-inline center-block text-center">
+                            </ul>
+                        </div>
+                        <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12" data-component="crn-textinput" id="crn-textinput-283724">
+                            <div class="form-group">
+                                <label class="label-login control-label" for="input7274">{{'Login.view.Username' | translate}}</label>
+                                <input type="text" mask="" mask-placeholder="" ng-required="false" ng-model="username.value" class="form-control k-textbox" id="input7274" placeholder="" autocomplete="username" autocorrect="off" autocapitalize="off">
+                            </div>
+                        </div>
+                        <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12" data-component="crn-textinput" id="crn-textinput-343947">
+                            <div class="form-group">
+                                <label class="label-login control-label" for="input9836">{{'Login.view.Password' | translate}}</label>
+                                <input type="password" mask="" mask-placeholder="" ng-required="false" ng-model="password.value" class="form-control k-textbox" id="input9836" autocomplete="current-password" placeholder="">
+                            </div>
+                        </div>
+                        <div class="component-holder ng-binding ng-scope col-xs-12 col-md-12" data-component="crn-enterprise-checkbox" id="crn-enterprise-checkbox-889238">
+                        </div>
+                        <div class="component-holder ng-binding ng-scope col-md-12 col-xs-12" data-component="crn-button" ng-destroy="">
+                            <div class="messages">
+                                <div ng-show="message.error" class="help-block" data-container="true">
+                                    {{message.error}}
+                                </div>
+                            </div>
+                            <button role="button" aria-label="{{'Login.view.Login' | translate}}" class="btn btn-default k-button btn-primary" type="submit" ng-disabled="form.$invalid || vm.dataLoading" ng-click="" xattr-size="" xattr-fullsize="" xattr-theme="btn-default" xattr-disabled="" data-component="crn-button" ng-destroy="">
+                                <span>{{"Login.view.Login" | translate}}</span>
+                            </button>
+                        </div>
+                    </form>
+            </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>

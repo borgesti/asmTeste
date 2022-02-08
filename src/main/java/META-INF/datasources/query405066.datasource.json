@@ -1,0 +1,167 @@
+{
+  "customId": "queryenvolvidos",
+  "queryName": "qryListagemEnvolvidos",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "ASM_Envolvido",
+  "entityFullName": "asm.entity.ASM_Envolvido",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "ASM_Envolvido",
+        "namespace": "asm.entity.ASM_Envolvido",
+        "alias": "env"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "env",
+        "type": "string"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [
+      {
+        "func": "get",
+        "field": "env.nome_envolvido",
+        "order": "asc"
+      }
+    ],
+    "rules": {
+      "condition": "AND",
+      "rules": [],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "ide_envolvido": null,
+    "fk_asm_denuncia": null,
+    "nome_envolvido": null,
+    "tipo_relacionamento": null,
+    "descricao_relacionamento": null
+  },
+  "defaultValuesProperties": {
+    "ide_envolvido": null,
+    "fk_asm_denuncia": null,
+    "nome_envolvido": null,
+    "tipo_relacionamento": null,
+    "descricao_relacionamento": null
+  },
+  "security": {
+    "ide_envolvido": null,
+    "fk_asm_denuncia": null,
+    "nome_envolvido": null,
+    "tipo_relacionamento": null,
+    "descricao_relacionamento": null
+  },
+  "calcFields": {
+    "nome_descricao_grade": {
+      "type": "server",
+      "blocklyMethod": "resolveCodigoEnvolvimento",
+      "blocklyClass": "blockly.BlocoDenuncia",
+      "blocklyLanguage": "java",
+      "blocklyParams": [
+        {
+          "name": "codigo",
+          "value": "data",
+          "type": "CUSTOM"
+        }
+      ],
+      "blocklyJson": {
+        "namespace": "blockly.BlocoDenuncia",
+        "sourcePath": "src/main/java/blockly/BlocoDenuncia.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "obterNumeroSequencial",
+            "hasReturn": "true",
+            "params": [
+              "denuncia\u0026lt;asm.entity.ASM_Denuncia\u0026gt;"
+            ]
+          },
+          {
+            "name": "validarCPF",
+            "hasReturn": "true",
+            "params": [
+              "cpf"
+            ]
+          },
+          {
+            "name": "resolveCodigoEnvolvimento",
+            "hasReturn": "true",
+            "params": [
+              "codigo"
+            ]
+          },
+          {
+            "name": "navegarEntre Abas",
+            "hasReturn": "true",
+            "params": [
+              "abaAtual",
+              "proximaAba"
+            ]
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    }
+  },
+  "calcFieldsSecurity": {
+    "nome_descricao_grade": null
+  },
+  "calcFieldsProperties": {
+    "nome_descricao_grade": {
+      "type": "String"
+    }
+  },
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/asm/query405066/",
+  "audit": false
+}

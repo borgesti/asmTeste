@@ -1,0 +1,746 @@
+/*original do plugin*/
+@import './cronapp-main-pic.css';
+@import './cronapp-util-pic.css';
+/* importado do GT */
+@import './print.css';
+
+
+/* asm - atendimentos sec mulher*/
+
+/* colunas grade */
+
+    .k-grid td {
+        vertical-align: top !important;
+    }
+
+    .k-grid td, .k-grid th {
+        padding: 5px 12px;
+        word-break: break-word !important;
+    }
+
+/* abas */
+/*Nav tab*/
+    .nav-tabs-asm {
+        background: #33591e !important;
+        border-bottom: 1px solid #ddd;
+        padding-left: 0;
+    }
+    .nav-asm.nav-tabs-asm li.active {
+        background-color: #173010 !important; 
+    }
+    .nav-asm > li {
+        position: relative;
+        display: inline-block;
+        padding: 10px 15px;
+        color: white;
+    }
+
+    .nav-asm > li > a{
+        color: white;
+    }    
+
+    .nav-tabs-asm > li.active, .nav-tabs-asm > li.active:hover, .nav-tabs-asm > li.active:focus {
+        background-color: #173010 !important;
+        color: white !important;
+        border: 0;
+        font-weight: 500;
+    }
+
+
+/* já usava no premiacão*/
+.display-none {
+    display: none;
+}
+
+.display-centro {
+    display: block;
+    text-align: center;
+}
+
+.link-grade {
+    color: #0043ff !important;
+}
+
+.espaco-entre-linhas {
+  line-height:1.5;
+}
+
+/*
+Estava duplicado, eu usei no premiação mas tem no importado do GT - Gestão de Teletrabalho
+.titulo-pagina { 
+  font-size: 3rem;
+  margin-top: 1rem;
+  padding: 1rem 0px 0px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, 
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}*/
+
+/* importado do GT */
+body{
+    padding-bottom: 3rem;
+}
+
+/* container header */
+.navbar__container{
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+}
+.container-fluid.container-mensagem {
+    margin: 0;
+    padding: 0;
+}
+
+/* Página css geral */
+.titulo-pagina.titulo-pagina--subtitulo {
+    padding-bottom: 0;
+}
+.titulo-pagina{
+    font-size: 3rem;
+    margin-top: 1rem;
+    padding: 1rem 0 0 0;
+    font-weight: 500;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",
+                 Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji",
+                 "Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+}
+.titulo-pagina-modal{
+    font-size: 2rem;
+}
+.subtitulo-pagina{
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-size: 1.8rem;
+}
+.titulo-pagina-com-subtitulo{
+    padding-bottom: 1rem;
+}
+.lista-atividades--container{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.paragrafo{
+    margin: 0;
+}
+.container--servidor-foto{
+    margin-bottom: 1rem;
+}
+.container--btn-right{
+    text-align: right;
+}
+
+.texto-info-obrigatorio { /*- Adicionado em 16-09-2021*/
+    color: #666666;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* customização botoes */
+.btn-add-pro{
+    margin-top: 2.5rem !important;
+}
+.btn-success-pro {
+    color: #fff !important;
+    background-color: #517f48 !important;
+    border-color: rgba(0,0,0,0) !important;
+    border-bottom: 2px solid #385d30 !important;
+}
+.btn-success-pro:active {
+    color: #fff !important;
+    background-color: #2e4c28 !important;
+}
+.btn-success-pro:hover {
+    color: #fff !important;
+    background-color: #456b3d !important;
+    border-color: rgba(0,0,0,0) !important;
+    border-bottom: 2px solid #000 !important;
+}
+.btn-success-pro:focus {
+    color: #fff !important;
+    background-color: #456b3d !important;
+    border-color: rgba(0,0,0,0) !important;
+    border-bottom: 2px solid #000 !important;
+}
+.btn-success-pro:visited {
+    color: #fff !important;
+    background-color: #517f48 !important;
+    border-color: rgba(0,0,0,0) !important;
+    border-bottom: 2px solid #385d30 !important;
+}
+.btn-secondary-pro {
+    color: #325a2a !important;
+    background-color: #d8e6d5 !important;
+    border-color: rgba(0,0,0,0) !important;
+    border-bottom: 2px solid #96af91 !important;
+}
+.btn-secondary-pro:hover{
+    color: #325a2a !important;
+    background-color: #b3d0ad !important;
+    border-bottom: 2px solid #789672 !important;
+}
+.btn-secondary-pro:focus {
+    color: #1a3514 !important;
+    background-color: #8baf84 !important;
+    border-bottom: 2px solid #4c6547 !important;
+}
+.btn-secondary-pro:visited {
+    color: #325a2a !important;
+    background-color: #d8e6d5 !important;
+    border-color: rgba(0,0,0,0) !important;
+    border-bottom: 2px solid #96af91 !important;
+}
+.btn-secondary-pro:active {
+    color: #1a3514 !important;
+    background-color: #8baf84 !important;
+    border-bottom: 2px solid #4c6547 !important;
+}
+
+/* dados forms table */
+.form-control.form-pesquisar {
+    margin-top: 4.55rem;
+}
+a.td-link {
+    color: #198754!important;
+}
+a.page-link{
+    color: #198754!important;
+}
+.arow-up-down{
+    margin-right: .2rem;
+}
+.form-pesquisar{
+    margin-top: 3rem;
+}
+.tabela-servidor-teletrabalho{
+    margin-top: 1rem;
+}
+.pagination{
+    float: right;
+}
+.btn-controle-tabela{
+    margin-top: 4.5rem;
+    text-align: right;
+}
+input#checkbox-modal {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1rem;
+}
+input.checkbox {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: .5rem;
+}
+.check-aceite, .assinatura-aceite{
+    margin-top: 1rem;
+}
+.checkbox {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: .8rem .5rem .5rem 1rem;
+    border: 1px solid rgba(0,0,0,.125);
+}
+.check-text{
+    vertical-align: top;
+    display: inline;
+}
+
+/* termo de adesÃ£o - lista de itens para aceite - Adicionado em 15-09-2021*/
+.check-lista_item {
+    position: absolute;
+    top: 0.5rem;
+    left: 0;
+}
+.label-lista_item {
+    padding: 0.2rem 0rem 0rem 2rem;
+    position: relative;
+}
+
+/* componente login mensagem */
+.nome-usuario{
+    margin-left: 1.1rem;
+}
+#tooltip {
+    text-decoration: underline;
+}
+.icon-alerta{
+    font-size: 2rem;
+}
+
+.dados-servidor{
+    margin-bottom: .5rem;
+    padding: 0;
+}
+
+
+/* Relatórios */
+.well-border {
+    padding: 1rem 0 0 0;
+    border: solid 1px #ccc;
+}
+.well-border:last-of-type {
+    padding: 1rem 0 0 0;
+    border: solid 1px #ccc;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.form-divider {
+    margin-bottom: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+.textarea-form{
+    margin-left: 1rem;
+}
+.accordionContainer{
+    margin-top: 2rem;
+}
+.container-atividades{
+    padding-top: 1rem;
+}
+.link-coll{
+    color: #198754;
+}
+.link-coll:hover, .link-coll:visited, .link-coll:active{
+    color: #198754;
+}
+.table-margin{
+    margin-top: 2rem;
+}
+i.bi.bi-chevron-down.icon-collapse {
+    margin-right: .5rem;
+}
+.bi.bi-file-earmark-check-fill.relatorio {
+    font-size: 1.8rem;
+    color: #198754;
+}
+.file-upload{
+    margin-bottom: 2rem;
+}
+.img-fluid{
+    border-radius: 4px;
+    width: 100%;
+}
+.pag-principal{
+    margin-top: 2rem;
+}
+.e-horario{
+    text-align: center;
+    padding-top: 2.5rem;
+}
+a.topo-aplicacao--identificacao{
+    color: white;
+    text-decoration: none;
+}
+.texto-horario--preferencial{
+    margin-bottom: 1rem;
+}
+ul.container__servidor-lista {
+    margin: 0;
+    padding: 0;
+}
+li.servidor-lista{
+    list-style-type: none;
+    margin-bottom: 2rem;
+}
+.pactuacao-horario{
+    font-weight: bold;
+}
+.form-group-modal {
+    margin-bottom: 0;
+}
+.form-group-pactuacao {
+    margin-top: 1rem;
+}
+.assinatura-modal{
+    margin-top: 2rem;
+}
+.motivo{
+    margin-top: 1rem;
+}
+.subtitulo-tabela{
+    margin-top: 1rem;
+}
+.mg-top{
+    margin-top: 1rem;
+}
+.checkbox-modal{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.badge-prorrogado{
+    display: block;
+}
+.badge-warning {
+    color: #212529;
+    background-color: #ffc107;
+}
+.badge-success {
+    color: #fff;
+    background-color: #28a745;
+}
+
+/* Helpers */
+.menu-lateral{
+    font-family: 'Source Sans Pro', sans-serif !important;
+    float: right;
+    padding-top: 60px;
+    display: block;
+    margin-right: 30px;
+    font-size: 1.2em;
+    background: none;
+    width: auto;
+    color: white !important;
+    text-align: right;
+}
+.menu-lateral a{
+    color: white !important;
+}
+ul.none {
+	list-style-type: none;
+}
+.form-control{
+    border: 1px solid #969696;
+}
+.btn-danger-pro{
+    color: #fff !important;
+    background-color: #ce3a36 !important;
+    border-color: #ce3a36 !important;
+}
+.btn-danger-pro:active {
+    color: #fff !important;
+    background-color: #962022 !important;
+}
+.btn-danger-pro:hover {
+    color: #fff !important;
+    background-color: #9c2c29 !important;
+    border-color: rgba(0,0,0,0) !important;
+    border-bottom: 2px solid #000 !important;
+}
+.titulo-pro[hover]:hover::after {  
+    content: attr(hover);
+    position: absolute;
+    top: -100%;
+    font-style: italic;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 6px;
+    font-weight: 400;
+}
+.hover-correcao.titulo-pro[hover]:hover::after {
+    top: -340%;
+    width: 100%;
+    margin-left: -80%;
+    inline-size: fit-content;
+}
+.divider-pro{
+    height: 0;
+    margin: .5rem 0;
+    overflow: hidden;
+    border-top: 1px solid #e9ecef;
+}
+.container-pro{
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 80%;
+}
+.pointer{
+    cursor: pointer;
+}
+
+.auto{
+    cursor: auto !important;
+}
+
+.fs-12rem{font-size: 1.2rem !important;}.fs-13rem{font-size: 1.3rem !important;}.fs-14rem{font-size: 1.4rem !important;}
+.fs-15rem{font-size: 1.5rem !important;}.fs-16rem{font-size: 1.6rem !important;}.fs-17rem{font-size: 1.7rem !important;}
+.fs-18rem{font-size: 1.8rem !important;}.fs-20rem{font-size: 2rem !important;}
+
+.nav-tabs-none{
+    display: none;
+}
+.p25{
+    padding: 25px;
+}
+.fw-b{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+.c-red{
+    color: #dc3545;
+}
+.c-pic{
+    color: #33591E;
+}
+.c-blue{
+    color: #0568e2;
+}
+.c-gray:{
+    color: #727272;
+}
+.modal-footer-pro{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: .75rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-bottom-left-radius: calc(.3rem - 1px);
+}
+.modal-footer-pro>*{
+    margin: .25rem;
+}
+.alert-box-custom{
+   display:block;
+   position:fixed;
+   padding:5px 20px 20px;
+   background:#fff;
+   border:1px solid #999;
+   text-align:center;
+   transform:translate(-50%,-50%) !important;
+   top:50% !important;
+   left:50% !important;
+   z-index:99999;
+   -webkit-box-shadow: 0px 0px 33px -6px rgba(0,0,0,0.59);
+   -moz-box-shadow: 0px 0px 33px -6px rgba(0,0,0,0.59);
+   box-shadow: 0px 0px 33px -6px rgba(0,0,0,0.59);   
+    border-radius: 10px;
+    width: 40%;
+
+}
+.alert-box-custom-bkg{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 66%);
+    border: 1px solid #999;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    z-index: 99999;
+}
+.alert-box-custom-icon{
+    color: rgb(248, 187, 134);
+    border-radius: 50%;
+    margin: .333333em auto .5em;
+    font-family: inherit;
+    font-size: 3em !important;
+    width: 80px;
+    height: 80px;
+    border: 4px solid rgb(250, 206, 168);
+    display: flex;
+    justify-content: center;
+    line-height: 73px;
+}
+.fadeIn{
+	animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes fadeIn {
+	0% {
+        top:50%;
+        left:50%;
+		transform: scale(0) translate(-50%,-50%);	
+		opacity: 0.0;		
+	}
+	60% {
+        top:50%;
+        left:50%;
+		transform: scale(1.1) translate(-50%,-50%);	
+	}
+	80% {
+        top:50%;
+        left:50%;
+		transform: scale(0.9) translate(-50%,-50%);	
+		opacity: 1;	
+	}	
+	100% {
+        top:50%;
+        left:50%;
+		transform: scale(1) translate(-50%,-50%);	
+		opacity: 1;	
+	}		
+}
+
+@-webkit-keyframes fadeIn {
+	0% {
+		-webkit-transform: scale(0) translate(-50%,-50%);;
+		opacity: 0.0;		
+	}
+	60% {
+		-webkit-transform: scale(1.1) translate(-50%,-50%);;
+	}
+	80% {
+		-webkit-transform: scale(0.9) translate(-50%,-50%);;
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(1) translate(-50%,-50%);;
+		opacity: 1;	
+	}		
+}
+
+.k-detail-row thead > tr > th {
+    text-align: left !important; 
+    background-color: white !important; 
+    color: black  !important;  
+    font-weight: bold  !important;
+}
+/* .k-detail-row thead > tr > th[data-title="Detalhamento"] {
+    text-align: left !important;
+    background-color: white !important; 
+    color: black  !important;  
+    font-weight: bold  !important;
+} */
+
+.k-detail-row thead > tr > th:hover {
+    color: #03630f !important;
+}
+
+.k-detail-row .k-grid-header{
+    background-color: white !important; 
+    height: 40px;
+}
+
+.fieldset-gt{
+    border-color: rgba(0,0,0,.42);
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 10px;
+}
+.legend-gt{
+    color: #000;
+    background-color: white;
+    width: fit-content;
+    margin-left: 1.5%;
+    border-bottom: none;
+    margin-bottom: 0px;
+}
+.k-button{
+    text-transform: inherit;
+}
+
+#reportViewContext > #reportView .modal-header > h2 {
+    display: none;
+}
+
+.stiJsViewerPage {
+    margin: 0px !important;
+    padding: 0px !important;
+    border: none !important;
+}
+
+#resposta .modal-header {
+    height: 100%;
+}
+
+.checkbox-relatorio{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 0 !important;
+}
+.underline{
+    text-decoration: underline;
+}
+
+.hover-relative:hover::after{
+    position: relative !important;
+}
+.hover-grid:hover::after{
+    font-size: 1.6rem;
+    margin-left: 5px;
+    width: 50%;
+    top: 0 !important;
+}
+.hover-m-l-5:hover::after{
+    margin-left: 5px;
+}
+
+.blinking {
+    animation-name:animate;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    opacity: 1;
+}
+
+@keyframes animate {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.lista-atividade{
+    font-size: 1.4rem;
+    line-height: 1.4;
+    color: black;
+    font-weight: 100;
+}
+
+.hover-grade[hover]:hover::after {  
+    content: attr(hover);
+    position: absolute;
+    font-style: italic;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 6px;
+    font-weight: 400;
+    margin-left: 5px;
+    width: 50%;
+    z-index: 9999;
+}
+
+
+.ml20p {
+    margin-left: 20%;
+}
+
+.mr20p {
+    margin-right: 20%;
+}
+
+.ml25p {
+    margin-left: 25%;
+}
+
+.mr25p {
+    margin-right: 25%;
+}
+
+.displayB {
+    display: block;
+}
+
+.displayN {
+    display: none;
+}
+
+.w90 {
+    width: 90% !important;
+}

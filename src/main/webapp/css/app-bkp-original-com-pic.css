@@ -1,0 +1,29 @@
+@import './cronapp-main-pic.css';
+@import './cronapp-util-pic.css';
+
+.display-none {
+    display: none;
+}
+
+.display-centro {
+    display: block;
+    text-align: center;
+}
+
+.link-grade {
+    color: #0043ff !important;
+}
+
+.titulo-pagina { 
+  font-size: 3rem;
+  margin-top: 1rem;
+  padding: 1rem 0px 0px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, 
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.espaco-entre-linhas {
+  line-height:1.5;
+}

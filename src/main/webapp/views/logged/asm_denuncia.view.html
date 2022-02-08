@@ -1,0 +1,752 @@
+<div id="starter" ng-init="" ng-destroy="" data-component="crn-start" screen-params="" primary-datasource="ASM_Denuncia">
+<h1 class="component-holder text-left h3 title" xattr-position="text-left" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-46144">ASM_Denuncia</h1>
+
+<datasource data-component="crn-datasource" filter="" name="ASM_Denuncia" entity="asm.ASM_Denuncia" keys="_objectKey" rows-per-page="100" class="" schema="[{&quot;name&quot;:&quot;ide_denuncia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;login_inclusao_denuncia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;data_criacao&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;numero_registro&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome_caso&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_sexo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_cpf&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_telefone&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_email&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_escolaridade&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_cep&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_endereco&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_bairro&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_cidade&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_uf&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;fato_ocorrido&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;data_ocorrencia&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;des_origem_denuncia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_emocional&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_psicologica&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_moral&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_fisica&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_sexual&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_patrimonial&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_politica_genero&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_institucional&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_assedio_moral&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_assedio_sexual&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_domestica&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_abuso_sexual_ca&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_abuso_fisico_ca&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_feminicidio&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_irregularidade_processo&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_ameaca_morte&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_tentativa_feminicidio&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_injuria_racial&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_outra_violencia&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;des_outra_violencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_alienacao_parental&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_continuada&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;texto_material_online&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_denunciante_vitima&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_sexo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_cpf&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_telefone&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_email&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_escolaridade&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_cep&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_endereco&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_bairro&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_cidade&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_uf&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;cod_origem_denuncia&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;dat_recebimento_denuncia&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;dat_encerramento_denuncia&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;des_motivo_encerramento&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;cod_situacao_denuncia&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;des_solicitacao_denunciante&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}]" condition="{&quot;maxRecord&quot;:100,&quot;params&quot;:[],&quot;expression&quot;:{&quot;type&quot;:&quot;OR&quot;,&quot;args&quot;:[{&quot;type&quot;:&quot;%&quot;,&quot;left&quot;:&quot;nome_caso&quot;,&quot;right&quot;:&quot;{{vars.search|raw}}&quot;,&quot;args&quot;:[]}]}}" lazy="true"></datasource>
+
+        <div role="search" ng-hide="ASM_Denuncia.inserting || ASM_Denuncia.editing" data-component="crn-textinput" id="crn-datasource-filter-general46144" class="">
+            <div class="form-group">
+                <label for="textinput-filter" class="">{{"template.crud.search" | translate}}</label>
+                <input type="text" ng-model="vars.search" id="textinput-filter" class="form-control k-textbox" value="" placeholder="{{'template.crud.search' | translate}}">
+            </div>
+        </div>
+
+<section ng-hide="ASM_Denuncia.editing || ASM_Denuncia.inserting" class="component-holder ng-binding ng-scope" data-component="crn-cron-grid" id="cron-crn-grid-search">
+    <cron-grid options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;ASM_Denuncia&quot;,&quot;entity&quot;:&quot;asm.ASM_Denuncia&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;asm.ASM_Denuncia&quot;,&quot;customId&quot;:&quot;ASM_Denuncia&quot;,&quot;name&quot;:&quot;ASM_Denuncia&quot;,&quot;customQueryName&quot;:&quot;asm.ASM_Denuncia&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;asm.entity.ASM_Denuncia&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;ide_denuncia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;login_inclusao_denuncia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;data_criacao&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;numero_registro&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome_caso&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_sexo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_cpf&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_telefone&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_email&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_escolaridade&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_cep&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_endereco&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_bairro&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_cidade&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_uf&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;fato_ocorrido&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;data_ocorrencia&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;des_origem_denuncia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_emocional&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_psicologica&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_moral&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_fisica&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_sexual&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_patrimonial&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_politica_genero&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_institucional&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_assedio_moral&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_assedio_sexual&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_domestica&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_abuso_sexual_ca&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_abuso_fisico_ca&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_feminicidio&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_irregularidade_processo&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_ameaca_morte&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_tentativa_feminicidio&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_injuria_racial&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_outra_violencia&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;des_outra_violencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_alienacao_parental&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_continuada&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;texto_material_online&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_denunciante_vitima&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_sexo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_cpf&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_telefone&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_email&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_escolaridade&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_cep&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_endereco&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_bairro&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_cidade&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_uf&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;cod_origem_denuncia&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;dat_recebimento_denuncia&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;dat_encerramento_denuncia&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;des_motivo_encerramento&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;cod_situacao_denuncia&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;des_solicitacao_denunciante&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}],&quot;type&quot;:&quot;entity&quot;,&quot;hasError&quot;:false},&quot;schema&quot;:[{&quot;name&quot;:&quot;ide_denuncia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;login_inclusao_denuncia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;data_criacao&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;numero_registro&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome_caso&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_sexo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_cpf&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_telefone&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_email&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_escolaridade&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_cep&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_endereco&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_bairro&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_cidade&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;denunciante_uf&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;fato_ocorrido&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;data_ocorrencia&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;des_origem_denuncia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_emocional&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_psicologica&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_moral&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_fisica&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_sexual&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_patrimonial&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_politica_genero&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_institucional&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_assedio_moral&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_assedio_sexual&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_domestica&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_abuso_sexual_ca&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_abuso_fisico_ca&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_feminicidio&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_irregularidade_processo&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_ameaca_morte&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_tentativa_feminicidio&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_injuria_racial&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_outra_violencia&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;des_outra_violencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_alienacao_parental&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_violencia_continuada&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;texto_material_online&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;ind_denunciante_vitima&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_sexo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_cpf&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_telefone&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_email&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_escolaridade&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_cep&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_endereco&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_bairro&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_cidade&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;vitima_uf&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;cod_origem_denuncia&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;dat_recebimento_denuncia&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;dat_encerramento_denuncia&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;des_motivo_encerramento&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;cod_situacao_denuncia&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;des_solicitacao_denunciante&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}],&quot;id&quot;:&quot;asm.ASM_Denuncia&quot;},&quot;allowPaging&quot;:true,&quot;allowSorting&quot;:true,&quot;allowGrouping&quot;:false,&quot;allowSelectionTotalPageToShow&quot;:true,&quot;allowRefreshGrid&quot;:true,&quot;allowSelectionRow&quot;:true,&quot;hideModalButtons&quot;:true,&quot;editable&quot;:&quot;datasource&quot;,&quot;columns&quot;:[{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;nome_caso&quot;,&quot;headerText&quot;:&quot;Caso&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;blocklyInfo&quot;:{&quot;blocklyParams&quot;:[]},&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;denunciante_nome&quot;,&quot;headerText&quot;:&quot;Nome do Denunciante &quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;blocklyInfo&quot;:{&quot;blocklyParams&quot;:[]},&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;vitima_nome&quot;,&quot;headerText&quot;:&quot;Nome da Vítima&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;blocklyInfo&quot;:{&quot;blocklyParams&quot;:[]},&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Command&quot;,&quot;headerText&quot;:&quot;{{ 'Action' | translate }}&quot;,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;command&quot;:&quot;edit|destroy&quot;,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;blocklyInfo&quot;:{&quot;blocklyParams&quot;:[]},&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]}],&quot;toolBarButtons&quot;:[{&quot;type&quot;:&quot;Native&quot;,&quot;title&quot;:&quot;create&quot;,&quot;blocklyInfo&quot;:{&quot;blocklyParams&quot;:[]}}],&quot;details&quot;:[],&quot;groupings&quot;:[]}" ng-model="vars.grid46144" class="" style="" scrollable="false">
+    </cron-grid>
+</section>
+
+<div data-component="crn-form" id="crn-form-form-ASM_Denuncia-46144">
+    <section class="form" ng-show="ASM_Denuncia.editing || ASM_Denuncia.inserting">
+        <form crn-datasource="ASM_Denuncia" class="">
+            <div class="tool-bar" ng-hide="datasource.editing || datasource.inserting">
+                <button aria-label="{{'StartInserting' | translate}}" class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-click="datasource.startInserting()"><span class="k-icon k-i-plus"></span></button>
+                <button aria-label="{{'StartEditing' | translate}}" class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-click="datasource.startEditing()"><span class="k-icon k-i-edit"></span></button>
+                <button aria-label="{{'Before' | translate}}" class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-disabled="!datasource.hasPrevious()" ng-click="datasource.previous()"><span class="k-icon k-i-arrow-chevron-left"></span></button>
+                <button aria-label="{{'Next' | translate}}" class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-disabled="!datasource.hasNext()" ng-click="datasource.next()"><span class="k-icon k-i-arrow-chevron-right"></span></button>
+                <button aria-label="{{'Remove' | translate}}" class="btn btn-danger btn-fab k-button" data-component="crn-button" ng-click="datasource.remove()"><span class="k-icon k-i-close"></span></button>
+            </div>
+            <div class="active-bar" ng-hide="!datasource.editing &amp;&amp; !datasource.inserting">
+                <button aria-label="{{'SaveChanges' | translate}}" class="btn btn-success btn-fab k-button" id="btn_crud_post41107" data-component="crn-button" ng-click="datasource.post()"><span class="k-icon k-i-check"></span></button>
+                <button aria-label="{{'CancelChanges' | translate}}" class="btn btn-danger btn-fab k-button" id="btn_crud_cancel41107" data-component="crn-button" ng-click="datasource.cancel()"><span class="k-icon k-i-cancel"></span></button>
+            </div>
+            <br>
+            <div class="crn-fieldset" ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting">
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-nome_caso-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-nome_caso" class="">Caso</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="text" ng-model="ASM_Denuncia.active.nome_caso" class="form-control k-textbox" id="textinput-nome_caso" placeholder="Caso" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-denunciante_nome-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-denunciante_nome" class="">Nome do Denunciante </label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="150" type="text" ng-model="ASM_Denuncia.active.denunciante_nome" class="form-control k-textbox" id="textinput-denunciante_nome" placeholder="Nome do Denunciante " mask="" mask-placeholder="" ng-required="true">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-vitima_nome-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-vitima_nome" class="">Nome da Vítima</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="150" type="text" ng-model="ASM_Denuncia.active.vitima_nome" class="form-control k-textbox" id="textinput-vitima_nome" placeholder="Nome da Vítima" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-login_inclusao_denuncia-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-login_inclusao_denuncia" class="">Incluído Por</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="10" type="text" ng-model="ASM_Denuncia.active.login_inclusao_denuncia" class="form-control k-textbox" id="textinput-login_inclusao_denuncia" placeholder="Incluído Por" mask="" mask-placeholder="" ng-required="true">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-data_criacao-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-data_criacao" class="">Data de Criação</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="datetime" ng-model="ASM_Denuncia.active.data_criacao" class="form-control k-textbox" id="textinput-data_criacao" placeholder="Data de Criação" mask="" mask-placeholder="" ng-required="true">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-numero_registro-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-numero_registro" class="">Registro nº</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="text" ng-model="ASM_Denuncia.active.numero_registro" class="form-control k-textbox" id="textinput-numero_registro" placeholder="Registro nº" mask="" mask-placeholder="" ng-required="true">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-denunciante_sexo-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-denunciante_sexo" class="">Sexo</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="2" type="text" ng-model="ASM_Denuncia.active.denunciante_sexo" class="form-control k-textbox" id="textinput-denunciante_sexo" placeholder="Sexo" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-denunciante_cpf-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-denunciante_cpf" class="">CPF</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="11" type="text" ng-model="ASM_Denuncia.active.denunciante_cpf" class="form-control k-textbox" id="textinput-denunciante_cpf" placeholder="CPF" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-denunciante_telefone-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-denunciante_telefone" class="">Telefone</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="15" type="text" ng-model="ASM_Denuncia.active.denunciante_telefone" class="form-control k-textbox" id="textinput-denunciante_telefone" placeholder="Telefone" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-denunciante_email-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-denunciante_email" class="">E-mail</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="150" type="text" ng-model="ASM_Denuncia.active.denunciante_email" class="form-control k-textbox" id="textinput-denunciante_email" placeholder="E-mail" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-denunciante_escolaridade-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-denunciante_escolaridade" class="">Denunciante Escolaridade</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="integer" ng-model="ASM_Denuncia.active.denunciante_escolaridade" class="form-control k-textbox" id="textinput-denunciante_escolaridade" placeholder="Denunciante Escolaridade" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-denunciante_cep-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-denunciante_cep" class="">CEP</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="8" type="text" ng-model="ASM_Denuncia.active.denunciante_cep" class="form-control k-textbox" id="textinput-denunciante_cep" placeholder="CEP" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-denunciante_endereco-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-denunciante_endereco" class="">Endereco</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="150" type="text" ng-model="ASM_Denuncia.active.denunciante_endereco" class="form-control k-textbox" id="textinput-denunciante_endereco" placeholder="Endereco" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-denunciante_bairro-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-denunciante_bairro" class="">Bairro</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="150" type="text" ng-model="ASM_Denuncia.active.denunciante_bairro" class="form-control k-textbox" id="textinput-denunciante_bairro" placeholder="Bairro" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-denunciante_cidade-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-denunciante_cidade" class="">Cidade</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="150" type="text" ng-model="ASM_Denuncia.active.denunciante_cidade" class="form-control k-textbox" id="textinput-denunciante_cidade" placeholder="Cidade" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-denunciante_uf-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-denunciante_uf" class="">UF</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="2" type="text" ng-model="ASM_Denuncia.active.denunciante_uf" class="form-control k-textbox" id="textinput-denunciante_uf" placeholder="UF" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-fato_ocorrido-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-fato_ocorrido" class="">Fato Ocorrido</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="text" ng-model="ASM_Denuncia.active.fato_ocorrido" class="form-control k-textbox" id="textinput-fato_ocorrido" placeholder="Fato Ocorrido" mask="" mask-placeholder="" ng-required="true">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-data_ocorrencia-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-data_ocorrencia" class="">Data da Ocorrência</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="datetime" ng-model="ASM_Denuncia.active.data_ocorrencia" class="form-control k-textbox" id="textinput-data_ocorrencia" placeholder="Data da Ocorrência" mask="" mask-placeholder="" ng-required="true">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-des_origem_denuncia-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-des_origem_denuncia" class="">Origem da Denúncia</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="text" ng-model="ASM_Denuncia.active.des_origem_denuncia" class="form-control k-textbox" id="textinput-des_origem_denuncia" placeholder="Origem da Denúncia" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_violencia_emocional-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_violencia_emocional" id="textinput-ind_violencia_emocional" placeholder="Violência Emocional">
+                                    <label for="textinput-ind_violencia_emocional" class="k-checkbox-label">Violência Emocional</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_violencia_psicologica-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_violencia_psicologica" id="textinput-ind_violencia_psicologica" placeholder="Violência Psicológica">
+                                    <label for="textinput-ind_violencia_psicologica" class="k-checkbox-label">Violência Psicológica</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_violencia_moral-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_violencia_moral" id="textinput-ind_violencia_moral" placeholder="Violência Moral">
+                                    <label for="textinput-ind_violencia_moral" class="k-checkbox-label">Violência Moral</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_violencia_fisica-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_violencia_fisica" id="textinput-ind_violencia_fisica" placeholder="Violência Física">
+                                    <label for="textinput-ind_violencia_fisica" class="k-checkbox-label">Violência Física</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_violencia_sexual-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_violencia_sexual" id="textinput-ind_violencia_sexual" placeholder="Violência Sexual">
+                                    <label for="textinput-ind_violencia_sexual" class="k-checkbox-label">Violência Sexual</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_violencia_patrimonial-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_violencia_patrimonial" id="textinput-ind_violencia_patrimonial" placeholder="Violência Patrimonial">
+                                    <label for="textinput-ind_violencia_patrimonial" class="k-checkbox-label">Violência Patrimonial</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_violencia_politica_genero-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_violencia_politica_genero" id="textinput-ind_violencia_politica_genero" placeholder="Violência Política de Gênero">
+                                    <label for="textinput-ind_violencia_politica_genero" class="k-checkbox-label">Violência Política de Gênero</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_violencia_institucional-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_violencia_institucional" id="textinput-ind_violencia_institucional" placeholder="Violência Institucional">
+                                    <label for="textinput-ind_violencia_institucional" class="k-checkbox-label">Violência Institucional</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_assedio_moral-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_assedio_moral" id="textinput-ind_assedio_moral" placeholder="Assédio Moral">
+                                    <label for="textinput-ind_assedio_moral" class="k-checkbox-label">Assédio Moral</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_assedio_sexual-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_assedio_sexual" id="textinput-ind_assedio_sexual" placeholder="Assédio Sexual">
+                                    <label for="textinput-ind_assedio_sexual" class="k-checkbox-label">Assédio Sexual</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_violencia_domestica-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_violencia_domestica" id="textinput-ind_violencia_domestica" placeholder="Violência Doméstica">
+                                    <label for="textinput-ind_violencia_domestica" class="k-checkbox-label">Violência Doméstica</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_abuso_sexual_ca-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_abuso_sexual_ca" id="textinput-ind_abuso_sexual_ca" placeholder="Abuso Sexual de Criança ou Adolescente">
+                                    <label for="textinput-ind_abuso_sexual_ca" class="k-checkbox-label">Abuso Sexual de Criança ou Adolescente</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_abuso_fisico_ca-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_abuso_fisico_ca" id="textinput-ind_abuso_fisico_ca" placeholder="Abuso Físico de Criança ou Adolescente">
+                                    <label for="textinput-ind_abuso_fisico_ca" class="k-checkbox-label">Abuso Físico de Criança ou Adolescente</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_feminicidio-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_feminicidio" id="textinput-ind_feminicidio" placeholder="Feminicídio">
+                                    <label for="textinput-ind_feminicidio" class="k-checkbox-label">Feminicídio</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_irregularidade_processo-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_irregularidade_processo" id="textinput-ind_irregularidade_processo" placeholder="Irregularidade no Processo">
+                                    <label for="textinput-ind_irregularidade_processo" class="k-checkbox-label">Irregularidade no Processo</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_ameaca_morte-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_ameaca_morte" id="textinput-ind_ameaca_morte" placeholder="Ameaça de Morte">
+                                    <label for="textinput-ind_ameaca_morte" class="k-checkbox-label">Ameaça de Morte</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_tentativa_feminicidio-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_tentativa_feminicidio" id="textinput-ind_tentativa_feminicidio" placeholder="Tentativa Feminicídio">
+                                    <label for="textinput-ind_tentativa_feminicidio" class="k-checkbox-label">Tentativa Feminicídio</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_injuria_racial-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_injuria_racial" id="textinput-ind_injuria_racial" placeholder="Injúria Racial">
+                                    <label for="textinput-ind_injuria_racial" class="k-checkbox-label">Injúria Racial</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_outra_violencia-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_outra_violencia" id="textinput-ind_outra_violencia" placeholder="Outra Violência...">
+                                    <label for="textinput-ind_outra_violencia" class="k-checkbox-label">Outra Violência...</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-des_outra_violencia-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-des_outra_violencia" class="">Descrição de Outra Violência</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="text" ng-model="ASM_Denuncia.active.des_outra_violencia" class="form-control k-textbox" id="textinput-des_outra_violencia" placeholder="Descrição de Outra Violência" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_alienacao_parental-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_alienacao_parental" id="textinput-ind_alienacao_parental" placeholder="Alienacão Parental">
+                                    <label for="textinput-ind_alienacao_parental" class="k-checkbox-label">Alienacão Parental</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_violencia_continuada-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_violencia_continuada" id="textinput-ind_violencia_continuada" placeholder="Violência Continuada">
+                                    <label for="textinput-ind_violencia_continuada" class="k-checkbox-label">Violência Continuada</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-texto_material_online-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-texto_material_online" class="">Material Online</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="text" ng-model="ASM_Denuncia.active.texto_material_online" class="form-control k-textbox" id="textinput-texto_material_online" placeholder="Material Online" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-enterprise-checkbox" id="crn-textinput-ind_denunciante_vitima-46144" class="">
+                        <div class="form-group">
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="checkbox" crn-allow-null-values="true" class="k-checkbox" ng-model="ASM_Denuncia.active.ind_denunciante_vitima" id="textinput-ind_denunciante_vitima" placeholder="Denunciante Vítima">
+                                    <label for="textinput-ind_denunciante_vitima" class="k-checkbox-label">Denunciante Vítima</label>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-vitima_sexo-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-vitima_sexo" class="">Sexo da Vítima</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="2" type="text" ng-model="ASM_Denuncia.active.vitima_sexo" class="form-control k-textbox" id="textinput-vitima_sexo" placeholder="Sexo da Vítima" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-vitima_cpf-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-vitima_cpf" class="">CPF da Vítima</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="11" type="text" ng-model="ASM_Denuncia.active.vitima_cpf" class="form-control k-textbox" id="textinput-vitima_cpf" placeholder="CPF da Vítima" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-vitima_telefone-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-vitima_telefone" class="">Telefone da Vítima</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="15" type="text" ng-model="ASM_Denuncia.active.vitima_telefone" class="form-control k-textbox" id="textinput-vitima_telefone" placeholder="Telefone da Vítima" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-vitima_email-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-vitima_email" class="">E-mail da Vítima</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="150" type="text" ng-model="ASM_Denuncia.active.vitima_email" class="form-control k-textbox" id="textinput-vitima_email" placeholder="E-mail da Vítima" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-vitima_escolaridade-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-vitima_escolaridade" class="">Escolaridade da Vítima</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="integer" ng-model="ASM_Denuncia.active.vitima_escolaridade" class="form-control k-textbox" id="textinput-vitima_escolaridade" placeholder="Escolaridade da Vítima" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-vitima_cep-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-vitima_cep" class="">Cep da Vítima</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="8" type="text" ng-model="ASM_Denuncia.active.vitima_cep" class="form-control k-textbox" id="textinput-vitima_cep" placeholder="Cep da Vítima" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-vitima_endereco-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-vitima_endereco" class="">Endereco da Vítima</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="150" type="text" ng-model="ASM_Denuncia.active.vitima_endereco" class="form-control k-textbox" id="textinput-vitima_endereco" placeholder="Endereco da Vítima" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-vitima_bairro-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-vitima_bairro" class="">Bairro da Vítima</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="150" type="text" ng-model="ASM_Denuncia.active.vitima_bairro" class="form-control k-textbox" id="textinput-vitima_bairro" placeholder="Bairro da Vítima" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-vitima_cidade-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-vitima_cidade" class="">Cidade da Vítima</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="150" type="text" ng-model="ASM_Denuncia.active.vitima_cidade" class="form-control k-textbox" id="textinput-vitima_cidade" placeholder="Cidade da Vítima" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-vitima_uf-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-vitima_uf" class="">UF da Vítima</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="2" type="text" ng-model="ASM_Denuncia.active.vitima_uf" class="form-control k-textbox" id="textinput-vitima_uf" placeholder="UF da Vítima" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-cod_origem_denuncia-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-cod_origem_denuncia" class="">Origem da Denúncia</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="integer" ng-model="ASM_Denuncia.active.cod_origem_denuncia" class="form-control k-textbox" id="textinput-cod_origem_denuncia" placeholder="Origem da Denúncia" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-dat_recebimento_denuncia-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-dat_recebimento_denuncia" class="">Recebimento da Denúncia</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="datetime" ng-model="ASM_Denuncia.active.dat_recebimento_denuncia" class="form-control k-textbox" id="textinput-dat_recebimento_denuncia" placeholder="Recebimento da Denúncia" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-dat_encerramento_denuncia-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-dat_encerramento_denuncia" class="">Data de Encerramento</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="datetime" ng-model="ASM_Denuncia.active.dat_encerramento_denuncia" class="form-control k-textbox" id="textinput-dat_encerramento_denuncia" placeholder="Data de Encerramento" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-des_motivo_encerramento-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-des_motivo_encerramento" class="">Motivo do Encerramento</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="text" ng-model="ASM_Denuncia.active.des_motivo_encerramento" class="form-control k-textbox" id="textinput-des_motivo_encerramento" placeholder="Motivo do Encerramento" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-cod_situacao_denuncia-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-cod_situacao_denuncia" class="">Situação</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="integer" ng-model="ASM_Denuncia.active.cod_situacao_denuncia" class="form-control k-textbox" id="textinput-cod_situacao_denuncia" placeholder="Situação" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-des_solicitacao_denunciante-46144" class="">
+                        <div class="form-group">
+                                <label for="textinput-des_solicitacao_denunciante" class="">Des Solicitacao Denunciante</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="text" ng-model="ASM_Denuncia.active.des_solicitacao_denunciante" class="form-control k-textbox" id="textinput-des_solicitacao_denunciante" placeholder="Des Solicitacao Denunciante" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+                <!-- NtoN  -->
+                <!-- NtoN  end-->
+            </div>
+        </form>
+    </section>
+    <section class="form" ng-show="ASM_Denuncia.editing || ASM_Denuncia.inserting">
+        <form>
+            <div>
+                <!-- OneToN -->
+                    <!--query filter 1toN -->
+
+                    <!-- query filter 1toN end-->
+                    <datasource data-component="crn-datasource" filter="" name="ASM_AnexoGrid" entity="asm.query514702" keys="_objectKey" dependent-lazy-post="ASM_Denuncia" rows-per-page="100" parameters="fk_asm_denuncia={{ASM_Denuncia.active._objectKey|raw}}" schema="[{&quot;name&quot;:&quot;ide_arquivo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;arquivo&quot;,&quot;type&quot;:&quot;Binary&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;data_criacao&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;extensao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;login_criacao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;fk_asm_denuncia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;fk_asm_acompanhamento&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;cod_tipo_acompanhamento&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;fk_asm_denuncia_nome_caso&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;fk_asm_acompanhamento_descricao_providencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" lazy="true" condition=""></datasource>
+                    <!-- teste -->
+                    <h2 class="lead component-holder text-left" data-component="crn-subtitle">ASM_Anexo </h2>
+                    <div class="component-holder ng-binding ng-scope" data-component="crn-cron-grid" id="crn-grid-ASM_AnexoGrid-46144">
+                        <cron-grid options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;ASM_AnexoGrid&quot;,&quot;entity&quot;:&quot;asm.ASM_Anexo&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;asm.ASM_Anexo&quot;,&quot;customId&quot;:&quot;ASM_Anexo&quot;,&quot;name&quot;:&quot;ASM_AnexoGrid&quot;,&quot;customQueryName&quot;:&quot;asm.ASM_Anexo&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;asm.entity.ASM_Anexo&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;ide_arquivo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;arquivo&quot;,&quot;type&quot;:&quot;Binary&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;data_criacao&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;extensao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;login_criacao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;fk_asm_denuncia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;fk_asm_acompanhamento&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;cod_tipo_acompanhamento&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;fk_asm_denuncia_nome_caso&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;fk_asm_acompanhamento_descricao_providencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;,&quot;hasError&quot;:false},&quot;schema&quot;:[{&quot;name&quot;:&quot;ide_arquivo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;arquivo&quot;,&quot;type&quot;:&quot;Binary&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;data_criacao&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;extensao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;login_criacao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;fk_asm_denuncia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;fk_asm_acompanhamento&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;cod_tipo_acompanhamento&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;fk_asm_denuncia_nome_caso&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;fk_asm_acompanhamento_descricao_providencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;id&quot;:&quot;asm.ASM_Anexo&quot;},&quot;allowPaging&quot;:true,&quot;allowSorting&quot;:true,&quot;allowGrouping&quot;:false,&quot;allowSelectionTotalPageToShow&quot;:true,&quot;allowRefreshGrid&quot;:true,&quot;allowSelectionRow&quot;:true,&quot;hideModalButtons&quot;:false,&quot;editable&quot;:&quot;popupCustom&quot;,&quot;popupInsert&quot;:&quot;modalASM_AnexoGrid&quot;,&quot;popupEdit&quot;:&quot;modalASM_AnexoGrid&quot;,&quot;columns&quot;:[{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;nome&quot;,&quot;headerText&quot;:&quot;Nome&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;blocklyInfo&quot;:{&quot;blocklyParams&quot;:[]},&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Command&quot;,&quot;headerText&quot;:&quot;{{ 'Action' | translate }}&quot;,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;command&quot;:&quot;edit|destroy&quot;,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;blocklyInfo&quot;:{&quot;blocklyParams&quot;:[]},&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]}],&quot;toolBarButtons&quot;:[{&quot;type&quot;:&quot;Native&quot;,&quot;title&quot;:&quot;create&quot;,&quot;blocklyInfo&quot;:{&quot;blocklyParams&quot;:[]}}],&quot;details&quot;:[],&quot;groupings&quot;:[]}" ng-model="vars.ASM_AnexoGrid46144" class="" style=""></cron-grid>
+                    </div>
+                <!-- OneToOne  end -->
+            </div>
+        </form>
+    </section>
+</div>
+
+
+    <div class="modal fade" id="modalASM_AnexoGrid">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="{{'Home.view.Close' | translate}}"><span aria-hidden="true">×</span></button>
+                        <h3 class="modal-title">ASM_Anexo</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="list-group list-group-sm row">
+<!-- else of !model.hasCronappFramework() -->
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+
+
+                                        <div data-component="crn-dynamic-file" id="crn-modal-textinput-arq_anexo-46144" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                    <label for="textinput-modal-arq_anexo-button">Arquivo</label>
+                                                    <div dynamic-file="" id="textinput-modal-arq_anexo" ng-model="ASM_AnexoGrid.active.arquivo" max-file-size="5MB" class="dynamic-image-container" ng-required="true" ng-click="cronapi.server('blockly.ArquivoDenuncia.testeEventosComponentes').names('x').run(ASM_AnexoGrid.active.arquivo)">
+                                                        {{"template.crud.clickOrDragAnFile" | translate}}
+                                                    </div>
+                                            </div>
+                                        </div>
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+
+
+                                        <div data-component="crn-textinput" id="crn-modal-textinput-nom_arquivo-46144" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                    <label for="textinput-modal-nom_arquivo">Nome</label>
+                                                    <input type="text" ng-model="ASM_AnexoGrid.active.nome" class="form-control k-textbox" id="textinput-modal-nom_arquivo" placeholder="Nome" mask="" mask-placeholder="" ng-required="true">
+                                            </div>
+                                        </div><div data-component="crn-textinput" id="crn-modal-textinput-tex_extensao-46144" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                    <label for="textinput-modal-tex_extensao">Extensao</label>
+                                                    <input type="text" ng-model="ASM_AnexoGrid.active.extensao" class="form-control k-textbox" id="textinput-modal-tex_extensao" placeholder="Extensao" mask="" mask-placeholder="" ng-required="true">
+                                            </div>
+                                        </div><div data-component="crn-textinput" id="crn-modal-textinput-dat_criacao-46144" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                    <label for="textinput-modal-dat_criacao">Data Criacao</label>
+                                                    <input type="datetime" ng-model="ASM_AnexoGrid.active.data_criacao" class="form-control k-textbox" id="textinput-modal-dat_criacao" placeholder="Data Criacao" mask="" mask-placeholder="" ng-required="true">
+                                            </div>
+                                        </div>
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+
+
+                                        
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+
+
+                                        <div data-component="crn-textinput" id="crn-modal-textinput-tex_login_criacao-46144" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                    <label for="textinput-modal-tex_login_criacao">Login Criacao</label>
+                                                    <input type="text" ng-model="ASM_AnexoGrid.active.login_criacao" class="form-control k-textbox" id="textinput-modal-tex_login_criacao" placeholder="Login Criacao" mask="" mask-placeholder="" ng-required="true">
+                                            </div>
+                                        </div>
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+
+
+                                        
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+                                            <datasource name="ASM_AcompanhamentoGridForCombo" entity="asm.ASM_Acompanhamento" keys="_objectKey" rows-per-page="100" schema="[{&quot;name&quot;:&quot;ide_acompanhamento&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;fk_asm_denuncia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;login_servidor&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;data_acompanhamento&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;descricao_providencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;data_providencia&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome_contato_providencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome_orgao_providencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;endereco_email_providencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;numero_telefone_providencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;descricao_resposta&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;data_resposta&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome_contato_resposta&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;endereco_email_resposta&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;numero_telefone_resposta&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;fk_asm_denuncia_nome_caso&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" lazy="true"></datasource>
+                                            <div data-component="crn-enterprise-dynamic-combobox" id="crn-combobox-ASM_AnexoGrid.active.fk_asm_acompanhamento-46144" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-show="false">
+                                                <div class="form-group">
+                                                    <label for="combobox-modal-fk_asm_acompanhamento-46144" class="">Fk Asm Acompanhamento</label>
+                                                    <cron-dynamic-select id="combobox-modal-fk_asm_acompanhamento-46144" name="combobox-modal-fk_asm_acompanhamento-46144" options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;ASM_AcompanhamentoGridForCombo&quot;,&quot;entity&quot;:&quot;asm.ASM_Acompanhamento&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;asm.ASM_Acompanhamento&quot;,&quot;customId&quot;:&quot;ASM_Acompanhamento&quot;,&quot;name&quot;:&quot;ASM_AcompanhamentoGridForCombo&quot;,&quot;customQueryName&quot;:&quot;asm.ASM_Acompanhamento&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;asm.entity.ASM_Acompanhamento&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;ide_acompanhamento&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;fk_asm_denuncia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;login_servidor&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;data_acompanhamento&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;descricao_providencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;data_providencia&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome_contato_providencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome_orgao_providencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;endereco_email_providencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;numero_telefone_providencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;descricao_resposta&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;data_resposta&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome_contato_resposta&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;endereco_email_resposta&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;numero_telefone_resposta&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;fk_asm_denuncia_nome_caso&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;,&quot;hasError&quot;:false},&quot;schema&quot;:[{&quot;name&quot;:&quot;ide_acompanhamento&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;fk_asm_denuncia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;login_servidor&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;data_acompanhamento&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;descricao_providencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;data_providencia&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome_contato_providencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome_orgao_providencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;endereco_email_providencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;numero_telefone_providencia&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;descricao_resposta&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;data_resposta&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;nome_contato_resposta&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;endereco_email_resposta&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;numero_telefone_resposta&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;fk_asm_denuncia_nome_caso&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;id&quot;:&quot;asm.ASM_Acompanhamento&quot;},&quot;filter&quot;:&quot;contains&quot;,&quot;dataTextField&quot;:&quot;descricao_providencia&quot;,&quot;dataValueField&quot;:&quot;_objectKey&quot;,&quot;dynamic&quot;:true,&quot;valuePrimitive&quot;:true,&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;changeCursor&quot;:true,&quot;customTemplate&quot;:false}" ng-model="ASM_AnexoGrid.active.fk_asm_acompanhamento" class="crn-select form-control">
+                                                    </cron-dynamic-select>
+                                                </div>
+                                            </div>
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+
+
+                                        <div data-component="crn-textinput" id="crn-modal-textinput-cod_tipo_acompanhamento-46144" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" ng-show="false">
+                                            <div class="form-group">
+                                                    <label for="textinput-modal-cod_tipo_acompanhamento">Cod Tipo Acompanhamento</label>
+                                                    <input type="integer" ng-model="ASM_AnexoGrid.active.cod_tipo_acompanhamento" class="form-control k-textbox" id="textinput-modal-cod_tipo_acompanhamento" placeholder="Cod Tipo Acompanhamento" mask="" mask-placeholder="" ng-required="false">
+                                            </div>
+                                        </div>
+                                 <!-- end if !model.hasCronappFramework() -->
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

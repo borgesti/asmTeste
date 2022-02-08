@@ -1,0 +1,145 @@
+{
+  "customId": "listaracompanhamentos",
+  "queryName": "qryListaAcompanhamento",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "ASM_Acompanhamento",
+  "entityFullName": "asm.entity.ASM_Acompanhamento",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "ASM_Acompanhamento",
+        "namespace": "asm.entity.ASM_Acompanhamento",
+        "alias": "a"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "a",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "a.fk_asm_denuncia.numero_registro",
+        "type": "string"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [
+      {
+        "func": "get",
+        "field": "a.fk_asm_denuncia.numero_registro",
+        "order": "desc"
+      },
+      {
+        "func": "get",
+        "field": "a.data_acompanhamento",
+        "order": "asc"
+      }
+    ],
+    "rules": {
+      "condition": "AND",
+      "rules": [],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "ide_acompanhamento": "guid",
+    "fk_asm_denuncia": null,
+    "login_servidor": "username",
+    "data_acompanhamento": "now",
+    "descricao_providencia": null,
+    "data_providencia": null,
+    "nome_contato_providencia": null,
+    "nome_orgao_providencia": null,
+    "endereco_email_providencia": null,
+    "numero_telefone_providencia": null,
+    "descricao_resposta": null,
+    "data_resposta": null,
+    "nome_contato_resposta": null,
+    "endereco_email_resposta": null,
+    "numero_telefone_resposta": null
+  },
+  "defaultValuesProperties": {
+    "ide_acompanhamento": null,
+    "fk_asm_denuncia": null,
+    "login_servidor": null,
+    "data_acompanhamento": null,
+    "descricao_providencia": null,
+    "data_providencia": null,
+    "nome_contato_providencia": null,
+    "nome_orgao_providencia": null,
+    "endereco_email_providencia": null,
+    "numero_telefone_providencia": null,
+    "descricao_resposta": null,
+    "data_resposta": null,
+    "nome_contato_resposta": null,
+    "endereco_email_resposta": null,
+    "numero_telefone_resposta": null
+  },
+  "security": {
+    "ide_acompanhamento": null,
+    "fk_asm_denuncia": null,
+    "login_servidor": null,
+    "data_acompanhamento": null,
+    "descricao_providencia": null,
+    "data_providencia": null,
+    "nome_contato_providencia": null,
+    "nome_orgao_providencia": null,
+    "endereco_email_providencia": null,
+    "numero_telefone_providencia": null,
+    "descricao_resposta": null,
+    "data_resposta": null,
+    "nome_contato_resposta": null,
+    "endereco_email_resposta": null,
+    "numero_telefone_resposta": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/asm/query391625/",
+  "audit": false
+}

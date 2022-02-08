@@ -1,0 +1,83 @@
+{
+  "customId": "query806472",
+  "queryName": "BuscarNome",
+  "sourceType": "blockly",
+  "baseEntity": null,
+  "blockly": {
+    "type": "server",
+    "blocklyMethod": "Executar",
+    "blocklyClass": "blockly.Geral",
+    "blocklyLanguage": "java",
+    "blocklyParams": [],
+    "blocklyJson": {
+      "namespace": "blockly.Geral",
+      "sourcePath": "src/main/java/blockly/Geral.blockly",
+      "language": "java",
+      "methods": [
+        {
+          "name": "Executar",
+          "hasReturn": "true",
+          "params": []
+        }
+      ]
+    },
+    "blocklyGETMethod": "Executar",
+    "blocklyPOSTMethod": "Executar",
+    "blocklyPUTMethod": "Executar",
+    "blocklyDELETEMethod": "Executar",
+    "blocklyFILTERMethod": "Executar",
+    "blocklyCOUNTMethod": "Executar"
+  },
+  "entitySimpleName": null,
+  "entityFullName": null,
+  "query": "",
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "Nome": null
+  },
+  "defaultValuesProperties": {
+    "Nome": {
+      "key": false,
+      "nullable": true,
+      "type": "String"
+    }
+  },
+  "security": {
+    "Nome": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query806472/",
+  "audit": false
+}

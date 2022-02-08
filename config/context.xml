@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><Context>
+    <Resource accessToUnderlyingConnectionAllowed="true" cloudDatabaseKey="" driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver" logAbandoned="true" name="jdbc/main" password="usr_SqlDesSecMulher" profile="DEV" removeAbandoned="false" removeAbandonedTimeout="60" schema="" type="javax.sql.DataSource" url="jdbc:sqlserver://helix\des:3206;databaseName=SqlDesSecMulher" username="usr_SqlDesSecMulher"/>
+    <Profile value="DEV"/>
+    <Profile value="PROD"/>
+</Context>

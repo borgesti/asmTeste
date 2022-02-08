@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" bpmnAble="false" formTarget="src/main/webapp/views/denuncia/denuncia.view.html" resourceType="JS" ruleDescription="Denuncia" ruleName="Denuncia" ruleSynchronous="false" ruleTimeout="" ruleType="I" soap="false">
+  <metadata scale="1" scrollx="642.3" scrolly="-26.900000000000034" target="!=l!sPvTAQckRfl}l.c("/>
+  <block asynccall="false" colour="#fca03b" id="!=l!sPvTAQckRfl}l.c(" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-537" y="83">
+    <mutation>
+      <arg name="cpf"/>
+      <arg name="campo"/>
+    </mutation>
+    <field customattributes="" name="NAME">validarCPF</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#5b80a5" dependencyby="!=l!sPvTAQckRfl}l.c(" id="`e2/?^5G@D1u$/TdfJf," origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+        <value name="IF0">
+          <block asynccall="false" colour="#5b80a5" dependencyby="!=l!sPvTAQckRfl}l.c(" id="4.yvL*c54_o)5%ypb;XE" origintype="logic_negate" output="true" tooltip="Retorna verdadeiro se a entrada for falsa.  Retorna falsa se a entrada for verdadeira." type="logic_negate">
+            <value name="BOOL">
+              <block asynccall="false" colour="#5b80a5" dependencyby="!=l!sPvTAQckRfl}l.c(" id="PS}O,2my@$QA!fB[C{+Z" inline="true" multilayer="false" namespace="cronapi.logic.isNullOrEmpty" origintype="procedures_callreturn" output="true" returntype="ObjectType.BOOLEAN" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3E%C3%A9%20nulo%20ou%20vazio?%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20verifique%20se%20a%20vari%C3%A1vel%20%C3%A9%20nula%20ou%20vazia%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20L%C3%B3gico%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.logic.isNullOrEmpty%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.logic.isNullOrEmpty}}" return-raw-type="undefined">
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name=""/>
+                </mutation>
+                <value name="ARG0">
+                  <block asynccall="false" colour="#0088ee" dependencyby="!=l!sPvTAQckRfl}l.c(" id="89obt${Rnx=hS3A2MFuR" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field customattributes="" name="VAR">cpf</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block asynccall="false" colour="#0088ee" dependencyby="!=l!sPvTAQckRfl}l.c(" id="m5=-{`wy}Qo5TyBh.)U}" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+            <field customattributes="" name="VAR">valida</field>
+            <value name="VALUE">
+              <block asynccall="true" colour="#487f7f" dependencyby="!=l!sPvTAQckRfl}l.c(" id="_zAf*)k^H#e}Z,gYn.s{" multilayer="false" namespace="cronapi.util.callServerBlockly" origintype="procedures_callblockly_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EChamar%20Bloco%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20chamar%20bloco%20de%20programa%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Nome%20da%20fun%C3%A7%C3%A3o%20do%20bloco%20que%20dever%C3%A1%20ser%20chamada%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.util.callServerBlockly%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callblockly_callreturn">
+                <mutation data="%7B%22name%22:%22BlocoDenuncia%22,%22class%22:%22blockly.BlocoDenuncia%22,%22function%22:%22validarCPF%22,%22oldName%22:%22validarCPF%22,%22params%22:%22%5B%5C%22cpf%5C%22%5D%22,%22type%22:%22java%22,%22namespace%22:%22blockly.BlocoDenuncia%22,%22jsonBlocklySelected%22:%7B%22namespace%22:%22blockly.BlocoDenuncia%22,%22sourcePath%22:%22src/main/java/blockly/BlocoDenuncia.blockly%22,%22language%22:%22java%22,%22class%22:%22blockly.BlocoDenuncia%22,%22methods%22:%5B%7B%22name%22:%22obterNumeroSequencial%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22denuncia&amp;lt;asm.entity.ASM_Denuncia&amp;gt;%22%5D%7D,%7B%22name%22:%22validacoesFormularioDenuncia%22,%22hasReturn%22:%22true%22,%22params%22:%5B%5D%7D,%7B%22name%22:%22validarCPF%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22cpf%22%5D%7D,%7B%22name%22:%22navegarEntre%20Abas%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22abaAtual%22,%22proximaAba%22%5D%7D%5D%7D%7D" name="{{cronapi.util.callServerBlockly}}">
+                  <arg name="cpf"/>
+                </mutation>
+                <value name="ARG0">
+                  <block asynccall="false" colour="#0088ee" dependencyby="!=l!sPvTAQckRfl}l.c(" id="`hb[j,HGI.6uiQ@906:V" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field customattributes="" name="VAR">cpf</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block asynccall="false" colour="#934848" dependencyby="!=l!sPvTAQckRfl}l.c(" disabled="true" id="0uzK)[}fn$.CKC8imTc+" multilayer="true" namespace="cronapi.screen.notify" origintype="notify_type" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tipo%20da%20notifica%C3%A7%C3%A3o%20:%20Texto%3C/span%3E%3Cdiv%3E%20pode%20ser%20success,%20error,%20warning,%20info%20ou%20primary%3C/div%3E%3Cspan%3E%20-%20Mensagem%20:%20Texto%3C/span%3E%3Cdiv%3E%20Mensagem%20ou%20conte%C3%BAdo%20html%20a%20ser%20exibido%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.notify%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="notify_type">
+                <mutation name="{{cronapi.screen.notify}}" value="[object Object]"/>
+                <field customattributes="" name="SELECT">success</field>
+                <value name="MESSAGE">
+                  <shadow asynccall="false" colour="#5ba593" dependencyby="!=l!sPvTAQckRfl}l.c(" id="Wa1yRr5sw|UF5$p_dY4n" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field customattributes="" name="TEXT"/>
+                  </shadow>
+                  <block asynccall="false" colour="#0088ee" dependencyby="!=l!sPvTAQckRfl}l.c(" id="Lld)(?Sfn52OtH*11/[O" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field customattributes="" name="VAR">valida</field>
+                  </block>
+                </value>
+                <next>
+                  <block asynccall="false" colour="#5b80a5" dependencyby="!=l!sPvTAQckRfl}l.c(" id="k0wq}GZJOPuN`pnB;cz?" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                    <value name="IF0">
+                      <block asynccall="false" colour="#5b80a5" dependencyby="!=l!sPvTAQckRfl}l.c(" id="xV#@uFeTj26QY6GK-?KQ" origintype="logic_negate" output="true" tooltip="Retorna verdadeiro se a entrada for falsa.  Retorna falsa se a entrada for verdadeira." type="logic_negate">
+                        <value name="BOOL">
+                          <block asynccall="false" colour="#0088ee" dependencyby="!=l!sPvTAQckRfl}l.c(" id="?Tx{EJ}TZYgwd{Z.mfaK" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                            <field customattributes="" name="VAR">valida</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block asynccall="false" collapsed="true" colour="#934848" dependencyby="!=l!sPvTAQckRfl}l.c(" id="TT%Cw02S0!)zW,Q0T4A%" multilayer="true" namespace="cronapi.screen.notify" origintype="notify_type" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tipo%20da%20notifica%C3%A7%C3%A3o%20:%20Texto%3C/span%3E%3Cdiv%3E%20pode%20ser%20success,%20error,%20warning,%20info%20ou%20primary%3C/div%3E%3Cspan%3E%20-%20Mensagem%20:%20Texto%3C/span%3E%3Cdiv%3E%20Mensagem%20ou%20conte%C3%BAdo%20html%20a%20ser%20exibido%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.notify%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="notify_type">
+                        <field customattributes="" name="SELECT">error</field>
+                        <value name="MESSAGE">
+                          <shadow asynccall="false" colour="#5ba593" dependencyby="!=l!sPvTAQckRfl}l.c(" id="LT$:mu$h5_QL6U]H7vY6" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field customattributes="" name="TEXT"/>
+                          </shadow>
+                          <block asynccall="false" colour="#5ba58c" dependencyby="!=l!sPvTAQckRfl}l.c(" id=",5-N[/=K6(/}Tv:14$R3" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+                            <mutation items="3"/>
+                            <value name="ADD0">
+                              <block asynccall="false" colour="#5ba593" dependencyby="!=l!sPvTAQckRfl}l.c(" id="$^O$:Y$:Rp;VW|q^s,~8" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field customattributes="" name="TEXT">O CPF "</field>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block asynccall="false" colour="#5ba58c" dependencyby="!=l!sPvTAQckRfl}l.c(" id="^^F(Sve}1o3omi$J5b85" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+                                <mutation items="7"/>
+                                <value name="ADD0">
+                                  <block asynccall="false" colour="#5ba58c" dependencyby="!=l!sPvTAQckRfl}l.c(" id=",D`/?+}u.Bj]obJBMQUZ" origintype="text_getSubstring" output="true" tooltip="Retorna o trecho de texto especificado." type="text_getSubstring">
+                                    <mutation at1="true" at2="true"/>
+                                    <field customattributes="" name="WHERE1">FROM_START</field>
+                                    <field customattributes="" name="WHERE2">FROM_START</field>
+                                    <value name="STRING">
+                                      <block asynccall="false" colour="#0088ee" dependencyby="!=l!sPvTAQckRfl}l.c(" id="[%H[YSH-JBTPs]LJxl:s" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                        <field customattributes="" name="VAR">cpf</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT1">
+                                      <block asynccall="false" colour="#5b67a5" dependencyby="!=l!sPvTAQckRfl}l.c(" id="D%Pra$J(_NDkCJb{_#8M" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                        <field customattributes="" name="NUM">1</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT2">
+                                      <block asynccall="false" colour="#5b67a5" dependencyby="!=l!sPvTAQckRfl}l.c(" id="C?5K#6dUhE/=RYutjh2w" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                        <field customattributes="" name="NUM">3</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="ADD1">
+                                  <block asynccall="false" colour="#5ba593" dependencyby="!=l!sPvTAQckRfl}l.c(" id="Z#-G]LomXwSImL0lr5pX" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                    <field customattributes="" name="TEXT">.</field>
+                                  </block>
+                                </value>
+                                <value name="ADD2">
+                                  <block asynccall="false" colour="#5ba58c" dependencyby="!=l!sPvTAQckRfl}l.c(" id="1CR7_?VCXh%kjH^90EW1" origintype="text_getSubstring" output="true" tooltip="Retorna o trecho de texto especificado." type="text_getSubstring">
+                                    <mutation at1="true" at2="true"/>
+                                    <field customattributes="" name="WHERE1">FROM_START</field>
+                                    <field customattributes="" name="WHERE2">FROM_START</field>
+                                    <value name="STRING">
+                                      <block asynccall="false" colour="#0088ee" dependencyby="!=l!sPvTAQckRfl}l.c(" id="q$Q8Z{vKU[fjXEKfyihH" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                        <field customattributes="" name="VAR">cpf</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT1">
+                                      <block asynccall="false" colour="#5b67a5" dependencyby="!=l!sPvTAQckRfl}l.c(" id="$~v~C;Lqu3ry%NVdhl`=" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                        <field customattributes="" name="NUM">4</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT2">
+                                      <block asynccall="false" colour="#5b67a5" dependencyby="!=l!sPvTAQckRfl}l.c(" id="Z4(c4)DnCM+GZB+hoV60" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                        <field customattributes="" name="NUM">6</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="ADD3">
+                                  <block asynccall="false" colour="#5ba593" dependencyby="!=l!sPvTAQckRfl}l.c(" id=":v0E?6%0eq#I7eNCJIzS" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                    <field customattributes="" name="TEXT">.</field>
+                                  </block>
+                                </value>
+                                <value name="ADD4">
+                                  <block asynccall="false" colour="#5ba58c" dependencyby="!=l!sPvTAQckRfl}l.c(" id="@Plz2b}x4p:]DYbIxo4]" origintype="text_getSubstring" output="true" tooltip="Retorna o trecho de texto especificado." type="text_getSubstring">
+                                    <mutation at1="true" at2="true"/>
+                                    <field customattributes="" name="WHERE1">FROM_START</field>
+                                    <field customattributes="" name="WHERE2">FROM_START</field>
+                                    <value name="STRING">
+                                      <block asynccall="false" colour="#0088ee" dependencyby="!=l!sPvTAQckRfl}l.c(" id="]DUROon_,T0YcUIpomr|" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                        <field customattributes="" name="VAR">cpf</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT1">
+                                      <block asynccall="false" colour="#5b67a5" dependencyby="!=l!sPvTAQckRfl}l.c(" id="am~qmV@(ipe;jXwThquo" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                        <field customattributes="" name="NUM">7</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT2">
+                                      <block asynccall="false" colour="#5b67a5" dependencyby="!=l!sPvTAQckRfl}l.c(" id="m^B7Z:wD$!ySa)wENOHJ" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                        <field customattributes="" name="NUM">9</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="ADD5">
+                                  <block asynccall="false" colour="#5ba593" dependencyby="!=l!sPvTAQckRfl}l.c(" id="WiU7Y/=}kv6f,*7rGAro" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                    <field customattributes="" name="TEXT">-</field>
+                                  </block>
+                                </value>
+                                <value name="ADD6">
+                                  <block asynccall="false" colour="#5ba58c" dependencyby="!=l!sPvTAQckRfl}l.c(" id="h5-4V8%!~?fng:dfv2oA" origintype="text_getSubstring" output="true" tooltip="Retorna o trecho de texto especificado." type="text_getSubstring">
+                                    <mutation at1="true" at2="true"/>
+                                    <field customattributes="" name="WHERE1">FROM_START</field>
+                                    <field customattributes="" name="WHERE2">FROM_START</field>
+                                    <value name="STRING">
+                                      <block asynccall="false" colour="#0088ee" dependencyby="!=l!sPvTAQckRfl}l.c(" id="G{mc*i0F8|fgOw`{I.X0" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                        <field customattributes="" name="VAR">cpf</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT1">
+                                      <block asynccall="false" colour="#5b67a5" dependencyby="!=l!sPvTAQckRfl}l.c(" id="OK;`%8o-x2FF+M6}E=!Z" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                        <field customattributes="" name="NUM">10</field>
+                                      </block>
+                                    </value>
+                                    <value name="AT2">
+                                      <block asynccall="false" colour="#5b67a5" dependencyby="!=l!sPvTAQckRfl}l.c(" id="Q[_[:=65V`eCq7M:a_!%" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                        <field customattributes="" name="NUM">11</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="ADD2">
+                              <block asynccall="false" colour="#5ba593" dependencyby="!=l!sPvTAQckRfl}l.c(" id=";E_{Os{eIRY1Ogm((c8M" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field customattributes="" name="TEXT">" informado não é válido!</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block asynccall="false" colour="#5b80a5" dependencyby="!=l!sPvTAQckRfl}l.c(" id="T{bI]qR1]bjw8ibrk_iI" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                            <mutation else="1"/>
+                            <value name="IF0">
+                              <block asynccall="false" colour="#5b80a5" dependencyby="!=l!sPvTAQckRfl}l.c(" id="WTM6-O,+RN;sG)2S6v%9" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                                <field customattributes="" name="OP">EQ</field>
+                                <value name="A">
+                                  <block asynccall="false" colour="#0088ee" dependencyby="!=l!sPvTAQckRfl}l.c(" id="B^L-WQaX^Oe/{v6A2,@%" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                    <field customattributes="" name="VAR">campo</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block asynccall="false" colour="#5ba593" dependencyby="!=l!sPvTAQckRfl}l.c(" id="!|q41%q%gnO$HF)L5m`?" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                    <field customattributes="" name="TEXT">vitima_cpf</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block asynccall="false" colour="#934848" dependencyby="!=l!sPvTAQckRfl}l.c(" id="u{*~m+f++!dZ0;GjN7IK" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+                                </mutation>
+                                <value name="ARG0">
+                                  <block asynccall="false" colour="#934848" dependencyby="!=l!sPvTAQckRfl}l.c(" id="iyP6UZn8s),!-,]c-v}I" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                                    <field customattributes="" name="SELECT">ASM_Denuncia.active.vitima_cpf</field>
+                                  </block>
+                                </value>
+                                <value name="ARG1">
+                                  <shadow asynccall="false" colour="#5ba593" dependencyby="!=l!sPvTAQckRfl}l.c(" id="cV]*-Iz_t`h`Ru^O0^Mn" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                    <field customattributes="" name="TEXT"/>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block asynccall="false" colour="#934848" dependencyby="!=l!sPvTAQckRfl}l.c(" id="v~,c4)vc9}r|%2,XB*rf" multilayer="true" namespace="cronapi.screen.focusComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EFocar%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EfocusComponentDesc*%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20%20id%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.focusComponent%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                    <mutation name="{{cronapi.screen.focusComponent}}" return-raw-type="undefined">
+                                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name=" id"/>
+                                    </mutation>
+                                    <value name="ARG0">
+                                      <block asynccall="false" colour="#934848" dependencyby="!=l!sPvTAQckRfl}l.c(" id="pGs32s1)Oi9S*9mtxCj$" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                                        <field customattributes="" name="SELECT">ASM_Denuncia.active.vitima_cpf</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                            <statement name="ELSE">
+                              <block asynccall="false" colour="#934848" dependencyby="!=l!sPvTAQckRfl}l.c(" id="E?[elLM76L6r*6;:m^Nq" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+                                </mutation>
+                                <value name="ARG0">
+                                  <block asynccall="false" colour="#934848" dependencyby="!=l!sPvTAQckRfl}l.c(" id="k@t!7*{8Vu+l^JV|TaBg" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                                    <field customattributes="" name="SELECT">ASM_Denuncia.active.denunciante_cpf</field>
+                                  </block>
+                                </value>
+                                <value name="ARG1">
+                                  <shadow asynccall="false" colour="#5ba593" dependencyby="!=l!sPvTAQckRfl}l.c(" id=".+,;JD#IkR[c$%Ne_TP." origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                    <field customattributes="" name="TEXT"/>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block asynccall="false" colour="#934848" dependencyby="!=l!sPvTAQckRfl}l.c(" id="7;J4[g$wk4aun@szpSI8" multilayer="true" namespace="cronapi.screen.focusComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EFocar%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EfocusComponentDesc*%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20%20id%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.focusComponent%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                    <mutation name="{{cronapi.screen.focusComponent}}" return-raw-type="undefined">
+                                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name=" id"/>
+                                    </mutation>
+                                    <value name="ARG0">
+                                      <block asynccall="false" colour="#934848" dependencyby="!=l!sPvTAQckRfl}l.c(" id="zsffktv}u33Sged5VA*0" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                                        <field customattributes="" name="SELECT">ASM_Denuncia.active.denunciante_cpf</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" id="Aoj#i6E%aZwW%,e+ML!^" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-341" y="246">
+    <field customattributes="" name="NAME">exibicaoDadosVitima</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" disabled="true" id="?{XoA5m`3=Fx?M+,){wy" multilayer="true" namespace="cronapi.screen.notify" origintype="notify_type" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tipo%20da%20notifica%C3%A7%C3%A3o%20:%20Texto%3C/span%3E%3Cdiv%3E%20pode%20ser%20success,%20error,%20warning,%20info%20ou%20primary%3C/div%3E%3Cspan%3E%20-%20Mensagem%20:%20Texto%3C/span%3E%3Cdiv%3E%20Mensagem%20ou%20conte%C3%BAdo%20html%20a%20ser%20exibido%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.notify%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="notify_type">
+        <mutation name="{{cronapi.screen.notify}}" value="[object Object]"/>
+        <field customattributes="" name="SELECT">info</field>
+        <value name="MESSAGE">
+          <shadow asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="/MAjGvu=V587^:@cTy=I" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT"/>
+          </shadow>
+          <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="dh!5*yrv_98zE]Z|Eh9y" inline="true" multilayer="false" namespace="cronapi.screen.getValueOfField" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20valor%20do%20Campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.getValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+            <mutation name="{{cronapi.screen.getValueOfField}}" return-raw-type="undefined">
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+            </mutation>
+            <value name="ARG0">
+              <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id=".ZfxLffOKW}IcIaOHQnI" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                <field customattributes="" name="SELECT">ASM_Denuncia.active.ind_denunciante_vitima</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block asynccall="false" colour="#5b80a5" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="puDHX/(G/^7;.~EPM:[4" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+            <mutation else="1"/>
+            <value name="IF0">
+              <block asynccall="false" colour="#5b80a5" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="jNd:R4nP4n}a=RN.[FtR" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                <field customattributes="" name="OP">EQ</field>
+                <value name="A">
+                  <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="B2DDxq`_tOiv_KNi)VX." inline="true" multilayer="false" namespace="cronapi.screen.getValueOfField" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20valor%20do%20Campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.getValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                    <mutation name="{{cronapi.screen.getValueOfField}}" return-raw-type="undefined">
+                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="n0b6J8QAEedoT[q}x|53" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                        <field customattributes="" name="SELECT">ASM_Denuncia.active.ind_denunciante_vitima</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <value name="B">
+                  <block asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="_;1r!7*wlXY5XxnGqRv6" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field customattributes="" name="TEXT">true</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" disabled="true" id="!BMQOC+2eYZq(41B,2Y#" multilayer="true" namespace="cronapi.screen.notify" origintype="notify_type" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tipo%20da%20notifica%C3%A7%C3%A3o%20:%20Texto%3C/span%3E%3Cdiv%3E%20pode%20ser%20success,%20error,%20warning,%20info%20ou%20primary%3C/div%3E%3Cspan%3E%20-%20Mensagem%20:%20Texto%3C/span%3E%3Cdiv%3E%20Mensagem%20ou%20conte%C3%BAdo%20html%20a%20ser%20exibido%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.notify%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="notify_type">
+                <mutation name="{{cronapi.screen.notify}}" value="[object Object]"/>
+                <field customattributes="" name="SELECT">info</field>
+                <value name="MESSAGE">
+                  <shadow asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="/MAjGvu=V587^:@cTy=I" origintype="text" output="true" tooltip="function () { [native code] }" type="text" xmlns="">
+                    <field customattributes="" name="TEXT"/>
+                  </shadow>
+                  <block asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="k67q[du5@XEI|Jb!$:9C" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field customattributes="" name="TEXT">se..faça</field>
+                  </block>
+                </value>
+                <next>
+                  <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="4MYRE.tu.8$iA.)UgYfh" multilayer="true" namespace="cronapi.screen.showComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibir%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20um%20componente%20da%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.showComponent%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                    <mutation name="{{cronapi.screen.showComponent}}" return-raw-type="undefined">
+                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="58gLY8}9]~*9Q!?9xGw!" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field customattributes="" name="TEXT">div-identificacao-vitima</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="DZV$6;|DMVttS%Sp@W16" multilayer="true" namespace="cronapi.screen.showComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibir%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20um%20componente%20da%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.showComponent%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                        <mutation name="{{cronapi.screen.showComponent}}" return-raw-type="undefined">
+                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                        </mutation>
+                        <value name="ARG0">
+                          <block asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="NuXIS[6fq|z5lxA|8t]k" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field customattributes="" name="TEXT">div-endereco-vitima</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <statement name="ELSE">
+              <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" disabled="true" id="wrgRPNCj7]_mveeOrQt-" multilayer="true" namespace="cronapi.screen.notify" origintype="notify_type" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tipo%20da%20notifica%C3%A7%C3%A3o%20:%20Texto%3C/span%3E%3Cdiv%3E%20pode%20ser%20success,%20error,%20warning,%20info%20ou%20primary%3C/div%3E%3Cspan%3E%20-%20Mensagem%20:%20Texto%3C/span%3E%3Cdiv%3E%20Mensagem%20ou%20conte%C3%BAdo%20html%20a%20ser%20exibido%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.notify%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="notify_type">
+                <mutation name="{{cronapi.screen.notify}}" value="[object Object]"/>
+                <field customattributes="" name="SELECT">info</field>
+                <value name="MESSAGE">
+                  <shadow asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="/MAjGvu=V587^:@cTy=I" origintype="text" output="true" tooltip="function () { [native code] }" type="text" xmlns="">
+                    <field customattributes="" name="TEXT"/>
+                  </shadow>
+                  <block asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="J:|_#uNYjAPSp+@hZAU(" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field customattributes="" name="TEXT">senão...</field>
+                  </block>
+                </value>
+                <next>
+                  <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="!s?#Dl$!;E;LBpUkT99Z" multilayer="true" namespace="cronapi.screen.hideComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EEsconder%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20esconde%20um%20componente%20da%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.hideComponent%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                    <mutation name="{{cronapi.screen.hideComponent}}" return-raw-type="undefined">
+                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="*4KYUHuh1R!W5P1/^_tS" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field customattributes="" name="TEXT">div-identificacao-vitima</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id=",|cJC[HvkuFIHTdy-*{`" multilayer="true" namespace="cronapi.screen.hideComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EEsconder%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20esconde%20um%20componente%20da%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.hideComponent%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                        <mutation name="{{cronapi.screen.hideComponent}}" return-raw-type="undefined">
+                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                        </mutation>
+                        <value name="ARG0">
+                          <block asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="P0FUzSh*=S?T=-g.,3ad" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field customattributes="" name="TEXT">div-endereco-vitima</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="6FI!f~kp61AyMbpG%wU/" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                            <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+                              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+                            </mutation>
+                            <value name="ARG0">
+                              <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id=";TD9TW)o-+Q?;}:P{@@}" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                                <field customattributes="" name="SELECT">ASM_Denuncia.active.vitima_bairro</field>
+                              </block>
+                            </value>
+                            <value name="ARG1">
+                              <shadow asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="1,%O+9z*Y3Zm9,rI}ahq" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                <field customattributes="" name="TEXT"/>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="ODm#gshmC!W)Q/HSAb8^" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+                                </mutation>
+                                <value name="ARG0">
+                                  <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="-hl;AjEvfwMZaqbvmOI}" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                                    <field customattributes="" name="SELECT">ASM_Denuncia.active.vitima_cep</field>
+                                  </block>
+                                </value>
+                                <value name="ARG1">
+                                  <shadow asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="Oct,xr%kovN[LPt[Cumg" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                    <field customattributes="" name="TEXT"/>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="dl!OP[mxLVc{tWoxlYRq" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                    <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+                                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+                                    </mutation>
+                                    <value name="ARG0">
+                                      <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="g)fvJ3N$/=uGo@:O;]1N" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                                        <field customattributes="" name="SELECT">ASM_Denuncia.active.vitima_cidade</field>
+                                      </block>
+                                    </value>
+                                    <value name="ARG1">
+                                      <shadow asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="2M@0E,z5|iEe}5STGCWy" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                        <field customattributes="" name="TEXT"/>
+                                      </shadow>
+                                    </value>
+                                    <next>
+                                      <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="=7DK)b71i)`LvV!*[Vd?" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                        <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+                                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+                                        </mutation>
+                                        <value name="ARG0">
+                                          <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="]E5`eJy|IpZy5xS:X|QX" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                                            <field customattributes="" name="SELECT">ASM_Denuncia.active.denunciante_endereco</field>
+                                          </block>
+                                        </value>
+                                        <value name="ARG1">
+                                          <shadow asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="{~-99k}],*U|3By?+lq}" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                            <field customattributes="" name="TEXT"/>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id=";hW1es||j$Unp*PW9hnL" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                            <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+                                              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                                              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+                                            </mutation>
+                                            <value name="ARG0">
+                                              <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="DM/QW7|k~@fEinp5U9J5" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                                                <field customattributes="" name="SELECT">ASM_Denuncia.active.vitima_escolaridade</field>
+                                              </block>
+                                            </value>
+                                            <value name="ARG1">
+                                              <shadow asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="c,oN.AV5Q$1g{G}`UV@L" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                                <field customattributes="" name="TEXT"/>
+                                              </shadow>
+                                            </value>
+                                            <next>
+                                              <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="F*2`h(kfn+ipJw*KJpHY" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                                <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+                                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+                                                </mutation>
+                                                <value name="ARG0">
+                                                  <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="SU{Oq|a#psnSOp#}|#b?" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                                                    <field customattributes="" name="SELECT">ASM_Denuncia.active.vitima_nome</field>
+                                                  </block>
+                                                </value>
+                                                <value name="ARG1">
+                                                  <shadow asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="MT{h[orC#-%[KF70|uw|" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                                    <field customattributes="" name="TEXT"/>
+                                                  </shadow>
+                                                </value>
+                                                <next>
+                                                  <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="OYdSjT1WxFUp`,da#~cZ" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                                    <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+                                                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                                                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+                                                    </mutation>
+                                                    <value name="ARG0">
+                                                      <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="5:*@*4I5lmroQ[?*Ft.a" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                                                        <field customattributes="" name="SELECT">ASM_Denuncia.active.vitima_sexo</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="ARG1">
+                                                      <shadow asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="T{aw)fD)AF5M]z?!z5PS" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                                        <field customattributes="" name="TEXT"/>
+                                                      </shadow>
+                                                    </value>
+                                                    <next>
+                                                      <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="@gZuDMNV*X-_2j]Pp[$M" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                                        <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+                                                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                                                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+                                                        </mutation>
+                                                        <value name="ARG0">
+                                                          <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="%xOSKuFN2jcWJthPur%y" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                                                            <field customattributes="" name="SELECT">ASM_Denuncia.active.vitima_telefone</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="ARG1">
+                                                          <shadow asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="If/*Y_K9(EuAwK{V+@0m" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                                            <field customattributes="" name="TEXT"/>
+                                                          </shadow>
+                                                        </value>
+                                                        <next>
+                                                          <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="wD:ft63GP/Dec[A^sN{f" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                                            <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+                                                              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                                                              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+                                                            </mutation>
+                                                            <value name="ARG0">
+                                                              <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="zPATQaQ_$El2IuKX0-+Q" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                                                                <field customattributes="" name="SELECT">ASM_Denuncia.active.vitima_uf</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="ARG1">
+                                                              <shadow asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="+~5,IU2CKW,.FtpqIi[m" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                                                <field customattributes="" name="TEXT"/>
+                                                              </shadow>
+                                                            </value>
+                                                            <next>
+                                                              <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="4BrkoMTvV6z7:VNA(T3r" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                                                <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+                                                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                                                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+                                                                </mutation>
+                                                                <value name="ARG0">
+                                                                  <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="-O5oAP:mD~iWME$rpK@1" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                                                                    <field customattributes="" name="SELECT">ASM_Denuncia.active.vitima_cpf</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="ARG1">
+                                                                  <shadow asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="SoMvb]7b!~$l]bG[?lKY" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                                                    <field customattributes="" name="TEXT"/>
+                                                                  </shadow>
+                                                                </value>
+                                                                <next>
+                                                                  <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="5?mwk9Ii~itx^I9ut(KK" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                                                    <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+                                                                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                                                                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+                                                                    </mutation>
+                                                                    <value name="ARG0">
+                                                                      <block asynccall="false" colour="#934848" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="m5tM$z(tt;Xkj%[:YB1L" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                                                                        <field customattributes="" name="SELECT">ASM_Denuncia.active.vitima_email</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="ARG1">
+                                                                      <shadow asynccall="false" colour="#5ba593" dependencyby="Aoj#i6E%aZwW%,e+ML!^" id="Qlv.`e$uufBMeTu==:Zv" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                                                        <field customattributes="" name="TEXT"/>
+                                                                      </shadow>
+                                                                    </value>
+                                                                  </block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" id="?PVV)IRbzQ)6]OlaVL-Q" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="128" y="383">
+    <field customattributes="" name="NAME">ativarAbaInicial</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#934848" dependencyby="?PVV)IRbzQ)6]OlaVL-Q" id="jo|:4!0FW993Lz*Bz5=o" multilayer="true" namespace="cronapi.screen.setActiveTab" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EMudar%20aba%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20modifica%20a%20aba%20ativa%20do%20componente%20aba%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.setActiveTab%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.screen.setActiveTab}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#934848" dependencyby="?PVV)IRbzQ)6]OlaVL-Q" id="WqcLLf8]L3xRqP}[DxV2" origintype="ids_from_screen" output="true" type="ids_from_screen">
+            <field customattributes="" name="SELECT">tab-caso</field>
+          </block>
+        </value>
+        <next>
+          <block asynccall="false" colour="#934848" dependencyby="?PVV)IRbzQ)6]OlaVL-Q" disabled="true" id="p;OxKX#5nY?:IXT`|K^R" multilayer="true" namespace="cronapi.screen.refreshDatasource" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20uma%20fonte%20de%20dados,%20mantendo%20ou%20n%C3%A3o%20os%20filtros%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Manter%20filtro(s)?%20%20:%20L%C3%B3gico%3C/span%3E%3Cdiv%3E%20Caso%20verdadeiro,%20mant%C3%A9m%20os%20filtros%20existentes%20na%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.refreshDatasource%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+            <mutation name="{{cronapi.screen.refreshDatasource}}" return-raw-type="undefined">
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Manter filtro(s)? "/>
+            </mutation>
+            <value name="ARG0">
+              <block asynccall="false" colour="#934848" dependencyby="?PVV)IRbzQ)6]OlaVL-Q" id="V*(9UB=Oxy=Vrc~8Xd[`" origintype="datasource_from_screen" output="true" type="datasource_from_screen">
+                <field customattributes="" name="SELECT">ASM_Denuncia</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block asynccall="false" colour="#934848" dependencyby="?PVV)IRbzQ)6]OlaVL-Q" id="m^Pn~Db3YybBLIh,5g2i" origintype="util_dropdown" output="true" type="util_dropdown">
+                <mutation>
+                  <arg name="true" value="Verdadeiro"/>
+                  <arg name="false" value="Falso"/>
+                </mutation>
+                <field customattributes="" name="SELECT">true</field>
+              </block>
+            </value>
+            <next>
+              <block asynccall="false" colour="#934848" dependencyby="?PVV)IRbzQ)6]OlaVL-Q" disabled="true" id="o/E|A~JFQ7PJ{#%JfQH=" multilayer="false" namespace="cronapi.screen.back" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EVoltar%20para%20Formul%C3%A1rio%20Anterior%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EVolta%20para%20formul%C3%A1rio%20aberto%20anteriormente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.back%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                <mutation name="{{cronapi.screen.back}}" return-raw-type="undefined"/>
+                <comment h="80" pinned="false" w="160">este volta para o formulário anterior, no caso, se abrir no menu o denúncia, ele volta para a home</comment>
+                <next>
+                  <block asynccall="false" colour="#934848" dependencyby="?PVV)IRbzQ)6]OlaVL-Q" disabled="true" id=".YF@5jxftAY,Y!!*zNWQ" multilayer="true" namespace="cronapi.screen.changeView" origintype="procedures_open_form_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EMudar%20formul%C3%A1rio%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20mudar%20o%20formul%C3%A1rio%20corrente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Formul%C3%A1rio%20de%20destino%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Lista%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeView%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_open_form_callnoreturn">
+                    <mutation data="%7B%22form%22:%22#/home/denuncia/denuncia%22,%22params%22:%22%5B%5D%22%7D" name="{{cronapi.screen.changeView}}"/>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" id="u$07_9CYEZ-h9g%Gr?6/" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="-82" y="413">
+    <field customattributes="" name="NAME">gerenciarCamposDeEncerramento</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block asynccall="false" collapsed="true" colour="#5b80a5" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="O^pW,*DrM%/92k]$(qA{" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+        <value name="IF0">
+          <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="Z!kg=Ikwk@E*.=MXg)(y" multilayer="false" namespace="cronapi.screen.isInsertingMode" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EEst%C3%A1%20em%20modo%20de%20inser%C3%A7%C3%A3o?%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20verificar%20se%20est%C3%A1%20em%20modo%20de%20inser%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.isInsertingMode%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+            <mutation name="{{cronapi.screen.isInsertingMode}}" return-raw-type="undefined">
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
+            </mutation>
+            <value name="ARG0">
+              <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="-=$ssJ}eyfm`yVVGhmWP" multilayer="true" namespace="cronapi.screen.datasourceFromScreen" origintype="datasource_from_screen" output="true" returntype="ObjectType.STRING" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObt%C3%A9m%20Fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20retorna%20o%20nome%20da%20fonte%20de%20dados%20do%20formul%C3%A1rio%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.datasourceFromScreen%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="datasource_from_screen">
+                <field customattributes="" name="SELECT">ASM_Denuncia</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="`e$GM)%mVgpdK`0Gnz|=" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+            <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+            </mutation>
+            <value name="ARG0">
+              <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="Ek^osp@vw!xtaKl1x{r3" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                <field customattributes="" name="SELECT">ASM_Denuncia.active.cod_situacao_denuncia</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <shadow asynccall="false" colour="#5ba593" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id=":NvuoE9GD}nR`Bj+h+.2" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field customattributes="" name="TEXT">0</field>
+              </shadow>
+            </value>
+            <next>
+              <block asynccall="false" collapsed="true" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" disabled="true" id="kR$R-4ERClL]_2f4_Y8L" multilayer="true" namespace="cronapi.screen.notify" origintype="notify_type" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20notifica%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Tipo%20da%20notifica%C3%A7%C3%A3o%20:%20Texto%3C/span%3E%3Cdiv%3E%20pode%20ser%20success,%20error,%20warning,%20info%20ou%20primary%3C/div%3E%3Cspan%3E%20-%20Mensagem%20:%20Texto%3C/span%3E%3Cdiv%3E%20Mensagem%20ou%20conte%C3%BAdo%20html%20a%20ser%20exibido%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.notify%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="notify_type">
+                <field customattributes="" name="SELECT">info</field>
+                <value name="MESSAGE">
+                  <shadow asynccall="false" colour="#5ba593" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="9Ss75o@DHfF0DR~;!!(`" origintype="text" output="true" tooltip="function () { [native code] }" type="text" xmlns="">
+                    <field customattributes="" name="TEXT"/>
+                  </shadow>
+                  <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="ql)qcH5L4zC2_6v5ff7R" inline="true" multilayer="false" namespace="cronapi.screen.getValueOfField" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20valor%20do%20Campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.getValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                    <mutation name="{{cronapi.screen.getValueOfField}}" return-raw-type="undefined">
+                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="zzyA9AWrUWTaQF|SsGJI" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                        <field customattributes="" name="SELECT">ASM_Denuncia.active.cod_situacao_denuncia</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block asynccall="false" collapsed="true" colour="#5b80a5" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="w1CR!xlaX{9Tg(z;gUOd" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+            <value name="IF0">
+              <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="@]^r~p7yCP4rBkBb+EeN" multilayer="false" namespace="cronapi.screen.isEditingMode" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EEst%C3%A1%20em%20modo%20de%20edi%C3%A7%C3%A3o?%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20verificar%20se%20est%C3%A1%20em%20modo%20de%20edi%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.isEditingMode%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.screen.isEditingMode}}" return-raw-type="undefined">
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
+                </mutation>
+                <value name="ARG0">
+                  <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="D1qkF[b0:Al0#)q.AytR" multilayer="true" namespace="cronapi.screen.datasourceFromScreen" origintype="datasource_from_screen" output="true" returntype="ObjectType.STRING" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObt%C3%A9m%20Fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20retorna%20o%20nome%20da%20fonte%20de%20dados%20do%20formul%C3%A1rio%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.datasourceFromScreen%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="datasource_from_screen">
+                    <field customattributes="" name="SELECT">ASM_Denuncia</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block asynccall="false" colour="#5b80a5" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="MN=V;MgS9fmOAju/tAH|" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                <mutation else="1"/>
+                <value name="IF0">
+                  <block asynccall="false" colour="#5b80a5" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="gL+2QxMl*%h1x7ixXU3r" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                    <field customattributes="" name="OP">EQ</field>
+                    <comment h="80" pinned="false" w="160">Status 2 = Encerrado. Não faz alteração nesse caso.</comment>
+                    <value name="A">
+                      <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="E=ptrq#{6EXIe3/7c:z," inline="true" multilayer="false" namespace="cronapi.screen.getValueOfField" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20valor%20do%20Campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.getValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                        <mutation name="{{cronapi.screen.getValueOfField}}" return-raw-type="undefined">
+                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                        </mutation>
+                        <value name="ARG0">
+                          <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="1#@gZw}0]M$|#_kE/N%U" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                            <field customattributes="" name="SELECT">ASM_Denuncia.active.cod_situacao_denuncia</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block asynccall="false" colour="#5ba593" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="[:ET?=_eZ!g{8`l[h)$P" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                        <field customattributes="" name="TEXT">2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="{Wz-b}w$KL(eOcQR#,vb" multilayer="true" namespace="cronapi.screen.showComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibir%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20um%20componente%20da%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.showComponent%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                    <mutation name="{{cronapi.screen.showComponent}}" return-raw-type="undefined">
+                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="0g`{~;:Z+r_1`S;n4b?1" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                        <field customattributes="" name="SELECT">crn-textinput-encerramento-denuncia-404110</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="a=A~RLeUqn`w0:Q?K,xw" multilayer="true" namespace="cronapi.screen.showComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibir%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20um%20componente%20da%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.showComponent%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                        <mutation name="{{cronapi.screen.showComponent}}" return-raw-type="undefined">
+                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                        </mutation>
+                        <value name="ARG0">
+                          <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="4wX)t)(6YcR)iP8x9pG3" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                            <field customattributes="" name="SELECT">crn-textarea-motivo-encerramento-36971</field>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <statement name="ELSE">
+                  <block asynccall="false" colour="#0088ee" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="bqL3U9nrTb:hgMp_U%3;" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                    <field customattributes="" name="VAR">ideDenuncia</field>
+                    <value name="VALUE">
+                      <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="4GPMwii#!8+D,UevCUX[" inline="true" multilayer="false" namespace="cronapi.screen.getValueOfField" origintype="procedures_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20valor%20do%20Campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.getValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                        <mutation name="{{cronapi.screen.getValueOfField}}" return-raw-type="undefined">
+                          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                        </mutation>
+                        <value name="ARG0">
+                          <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="*y|5:biY94+?;MHJtW6Q" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                            <field customattributes="" name="SELECT">ASM_Denuncia.active.ide_denuncia</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block asynccall="false" colour="#0088ee" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="dds-uCfOYO,cOc/Jp6yZ" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+                        <field customattributes="" name="VAR">qtdAcompanhamentos</field>
+                        <value name="VALUE">
+                          <block asynccall="true" colour="#487f7f" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="/Sm}0IF+M}[G(NJUmGGq" multilayer="false" namespace="cronapi.util.callServerBlockly" origintype="procedures_callblockly_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EChamar%20Bloco%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20chamar%20bloco%20de%20programa%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Nome%20da%20fun%C3%A7%C3%A3o%20do%20bloco%20que%20dever%C3%A1%20ser%20chamada%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.util.callServerBlockly%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callblockly_callreturn">
+                            <mutation data="%7B%22name%22:%22BlocoDenuncia%22,%22class%22:%22blockly.BlocoDenuncia%22,%22function%22:%22contarQuantidadeAcompanhamentos%22,%22oldName%22:%22contarQuantidadeAcompanhamentos%22,%22params%22:%22%5B%5C%22ideDenuncia%5C%22%5D%22,%22type%22:%22java%22,%22namespace%22:%22blockly.BlocoDenuncia%22,%22jsonBlocklySelected%22:%7B%22namespace%22:%22blockly.BlocoDenuncia%22,%22sourcePath%22:%22src/main/java/blockly/BlocoDenuncia.blockly%22,%22language%22:%22java%22,%22class%22:%22blockly.BlocoDenuncia%22,%22methods%22:%5B%7B%22name%22:%22obterNumeroSequencial%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22denuncia&amp;lt;asm.entity.ASM_Denuncia&amp;gt;%22%5D%7D,%7B%22name%22:%22validarCPF%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22cpf%22%5D%7D,%7B%22name%22:%22contarQuantidadeAcompanhamentos%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22ideDenuncia%22%5D%7D,%7B%22name%22:%22resolveCodigoEnvolvimento%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22envolvimento&amp;lt;asm.entity.ASM_Envolvido&amp;gt;%22%5D%7D,%7B%22name%22:%22adicionarAcompanhamentoGradeEmDenuncia%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22ideDenuncia%22%5D%7D,%7B%22name%22:%22navegarEntre%20Abas%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22abaAtual%22,%22proximaAba%22%5D%7D%5D%7D%7D" name="{{cronapi.util.callServerBlockly}}">
+                              <arg name="ideDenuncia"/>
+                            </mutation>
+                            <value name="ARG0">
+                              <block asynccall="false" colour="#0088ee" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="Dgi4rFJ3i:;HbIaUVQxB" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                <field customattributes="" name="VAR">ideDenuncia</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block asynccall="false" colour="#5b80a5" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="-=`it!MRcJGx(q7Lf)=?" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+                            <mutation elseif="1"/>
+                            <value name="IF0">
+                              <block asynccall="false" colour="#5b80a5" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="2V$Zusgu]c)xt/udEj#W" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                                <field customattributes="" name="OP">GT</field>
+                                <value name="A">
+                                  <block asynccall="false" colour="#0088ee" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="aahxd;i5=ih/Uk-#CrTe" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                    <field customattributes="" name="VAR">qtdAcompanhamentos</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block asynccall="false" colour="#5b67a5" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="RDjRr(ucnLN8*RL5bi6f" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                    <field customattributes="" name="NUM">0</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="IUAwFY@]|r]RG$^2Z4i^" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+                                </mutation>
+                                <value name="ARG0">
+                                  <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="Q_O:?k_:h@$W8lEHEjug" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                                    <field customattributes="" name="SELECT">ASM_Denuncia.active.cod_situacao_denuncia</field>
+                                  </block>
+                                </value>
+                                <value name="ARG1">
+                                  <shadow asynccall="false" colour="#5ba593" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="-$~6}uSG1v)_K%x%0-te" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                    <field customattributes="" name="TEXT">1</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </statement>
+                            <value name="IF1">
+                              <block asynccall="false" colour="#5b80a5" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="|8;DsIAdB}1ipi^LJFf=" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+                                <field customattributes="" name="OP">EQ</field>
+                                <value name="A">
+                                  <block asynccall="false" colour="#0088ee" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="s6lWe8w}1Wr1:9A:HPHO" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                                    <field customattributes="" name="VAR">qtdAcompanhamentos</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block asynccall="false" colour="#5b67a5" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="?Sume6}G$8$3UhP9ZEkP" origintype="math_number" output="true" tooltip="function () { [native code] }" type="math_number">
+                                    <field customattributes="" name="NUM">0</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO1">
+                              <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="k!?HBd+[e8cEN^7E1M}}" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+                                </mutation>
+                                <value name="ARG0">
+                                  <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="H;xi`HsgdGiVhC-0LrJR" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                                    <field customattributes="" name="SELECT">ASM_Denuncia.active.cod_situacao_denuncia</field>
+                                  </block>
+                                </value>
+                                <value name="ARG1">
+                                  <shadow asynccall="false" colour="#5ba593" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="):Bkh#n3B]wCDjuJf#s%" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                                    <field customattributes="" name="TEXT">0</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </statement>
+                            <next>
+                              <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="$DeY#X5g+Y;E:SZJxsZU" multilayer="true" namespace="cronapi.screen.hideComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EEsconder%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20esconde%20um%20componente%20da%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.hideComponent%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                <mutation name="{{cronapi.screen.hideComponent}}" return-raw-type="undefined">
+                                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                                </mutation>
+                                <value name="ARG0">
+                                  <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="%LDhHLbwn|I*ZZv(NM9i" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                                    <field customattributes="" name="SELECT">crn-textinput-encerramento-denuncia-404110</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="Mnes-/X-4qsP$DtcHQ5+" multilayer="true" namespace="cronapi.screen.hideComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EEsconder%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20esconde%20um%20componente%20da%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.hideComponent%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                                    <mutation name="{{cronapi.screen.hideComponent}}" return-raw-type="undefined">
+                                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                                    </mutation>
+                                    <value name="ARG0">
+                                      <block asynccall="false" colour="#934848" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="(t5.?r2vwX[Ce^c{e)b1" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                                        <field customattributes="" name="SELECT">crn-textarea-motivo-encerramento-36971</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </statement>
+            <next>
+              <block asynccall="true" colour="#487f7f" dependencyby="u$07_9CYEZ-h9g%Gr?6/" id="L98a[^/7:jnc7qS]UZV~" multilayer="false" namespace="cronapi.util.callServerBlocklyNoReturn" origintype="procedures_callblockly_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EChamar%20Bloco%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20chamar%20bloco%20de%20programa%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Nome%20da%20fun%C3%A7%C3%A3o%20do%20bloco%20que%20dever%C3%A1%20ser%20chamada%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Par%C3%A2metros%20:%20Objeto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.util.callServerBlocklyNoReturn%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callblockly_callnoreturn">
+                <mutation data="%7B%22name%22:%22Denuncia%22,%22class%22:%22src/main/webapp/js/blockly/Denuncia%22,%22function%22:%22ativarAbaInicial%22,%22oldName%22:%22ativarAbaInicial%22,%22params%22:%22%5B%5D%22,%22type%22:%22js%22,%22namespace%22:%22js.blockly.Denuncia%22,%22jsonBlocklySelected%22:%7B%22namespace%22:%22js.blockly.Denuncia%22,%22sourcePath%22:%22src/main/webapp/js/blockly/Denuncia.blockly%22,%22language%22:%22js%22,%22class%22:%22src/main/webapp/js/blockly/Denuncia%22,%22methods%22:%5B%7B%22name%22:%22validarCPF%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22cpf%22,%22campo%22%5D%7D,%7B%22name%22:%22exibicaoDadosVitima%22,%22hasReturn%22:%22true%22,%22params%22:%5B%5D%7D,%7B%22name%22:%22ativarAbaInicial%22,%22hasReturn%22:%22false%22,%22params%22:%5B%5D%7D,%7B%22name%22:%22gerenciarCamposDeEncerramento%22,%22hasReturn%22:%22false%22,%22params%22:%5B%5D%7D,%7B%22name%22:%22exibicaoDescreverEnvolvimento%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22codigoEnvolvimento%22%5D%7D,%7B%22name%22:%22exibicaoDescreverOrigem%22,%22hasReturn%22:%22true%22,%22params%22:%5B%22codigoOrigem%22%5D%7D,%7B%22name%22:%22procedimentosAoIniciar%22,%22hasReturn%22:%22true%22,%22params%22:%5B%5D%7D%5D%7D%7D" name="{{cronapi.util.callServerBlocklyNoReturn}}"/>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" id="C*7wpWQPaO[qr0@baP9g" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-114" y="496">
+    <mutation>
+      <arg name="codigoEnvolvimento"/>
+    </mutation>
+    <field customattributes="" name="NAME">exibicaoDescreverEnvolvimento</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#5b80a5" dependencyby="C*7wpWQPaO[qr0@baP9g" id=":^urKE$Rht91kto_/Rtg" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+        <mutation else="1"/>
+        <value name="IF0">
+          <block asynccall="false" colour="#5b80a5" dependencyby="C*7wpWQPaO[qr0@baP9g" id="4bg],=3nuBFH6eB0*}@F" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+            <field customattributes="" name="OP">EQ</field>
+            <value name="A">
+              <block asynccall="false" colour="#0088ee" dependencyby="C*7wpWQPaO[qr0@baP9g" id="!/_Cg}Af/2]H,B/=OP1D" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field customattributes="" name="VAR">codigoEnvolvimento</field>
+              </block>
+            </value>
+            <value name="B">
+              <block asynccall="false" colour="#5ba593" dependencyby="C*7wpWQPaO[qr0@baP9g" id="yX=*1U8-9dNc8v@^=#G3" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field customattributes="" name="TEXT">0</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block asynccall="false" colour="#934848" dependencyby="C*7wpWQPaO[qr0@baP9g" id="#;G;!,uBol`[1cO!u)(n" multilayer="true" namespace="cronapi.screen.showComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibir%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20um%20componente%20da%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.showComponent%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+            <mutation name="{{cronapi.screen.showComponent}}" return-raw-type="undefined">
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+            </mutation>
+            <value name="ARG0">
+              <block asynccall="false" colour="#934848" dependencyby="C*7wpWQPaO[qr0@baP9g" id="1lE=yj:V/JNrQUKY{{J5" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                <field customattributes="" name="SELECT">crn-textinput-modal-descricao-envolvimento</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block asynccall="false" colour="#934848" dependencyby="C*7wpWQPaO[qr0@baP9g" id=";,tVoDiEeXoa{Lear}h#" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+            <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+            </mutation>
+            <value name="ARG0">
+              <block asynccall="false" colour="#934848" dependencyby="C*7wpWQPaO[qr0@baP9g" id="n:5lAyAVXsI_.=!Y6{,C" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                <field customattributes="" name="SELECT">ASMEnvolvido.active.descricao_relacionamento</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <shadow asynccall="false" colour="#5ba593" dependencyby="C*7wpWQPaO[qr0@baP9g" id="[D6F%h8fv2@ljo7}b4o2" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field customattributes="" name="TEXT"/>
+              </shadow>
+              <block asynccall="false" colour="#5ba593" dependencyby="C*7wpWQPaO[qr0@baP9g" id="z@XC=0:~my1{_f#_^b(9" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field customattributes="" name="TEXT"/>
+              </block>
+            </value>
+            <next>
+              <block asynccall="false" colour="#934848" dependencyby="C*7wpWQPaO[qr0@baP9g" id="0~Z-MbVWbQp2(_FRmLX?" multilayer="true" namespace="cronapi.screen.hideComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EEsconder%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20esconde%20um%20componente%20da%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.hideComponent%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                <mutation name="{{cronapi.screen.hideComponent}}" return-raw-type="undefined">
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                </mutation>
+                <value name="ARG0">
+                  <block asynccall="false" colour="#934848" dependencyby="C*7wpWQPaO[qr0@baP9g" id="k0A|}nr9zOypkkS*C[Sh" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                    <field customattributes="" name="SELECT">crn-textinput-modal-descricao-envolvimento</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" id="Q0w1%bk@QSI5[J+0cnEn" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-62" y="535">
+    <mutation>
+      <arg name="codigoOrigem"/>
+    </mutation>
+    <field customattributes="" name="NAME">exibicaoDescreverOrigem</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#5b80a5" dependencyby="Q0w1%bk@QSI5[J+0cnEn" id=".}Us[M@Y]PbK1aR,-d/3" origintype="controls_if" output="false" tooltip="function () { [native code] }" type="controls_if">
+        <mutation else="1"/>
+        <value name="IF0">
+          <block asynccall="false" colour="#5b80a5" dependencyby="Q0w1%bk@QSI5[J+0cnEn" id="?Z|avO)VlO4H]_%g.qd]" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+            <field customattributes="" name="OP">EQ</field>
+            <value name="A">
+              <block asynccall="false" colour="#0088ee" dependencyby="Q0w1%bk@QSI5[J+0cnEn" id="@Pp+b0O0|^lq3l~0xKIV" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                <field customattributes="" name="VAR">codigoOrigem</field>
+              </block>
+            </value>
+            <value name="B">
+              <block asynccall="false" colour="#5ba593" dependencyby="Q0w1%bk@QSI5[J+0cnEn" id="t:@5O|Oe.X6EvOQ((D7:" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field customattributes="" name="TEXT">0</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block asynccall="false" colour="#934848" dependencyby="Q0w1%bk@QSI5[J+0cnEn" id="KkOXs|Q35Y.22TfoFh,$" multilayer="true" namespace="cronapi.screen.showComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EExibir%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20exibe%20um%20componente%20da%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.showComponent%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+            <mutation name="{{cronapi.screen.showComponent}}" return-raw-type="undefined">
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+            </mutation>
+            <value name="ARG0">
+              <block asynccall="false" colour="#934848" dependencyby="Q0w1%bk@QSI5[J+0cnEn" id="{%t,vM-*@-m.SP#qjGvZ" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                <field customattributes="" name="SELECT">crn-textarea-descricao-origem-denuncia-149044</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block asynccall="false" colour="#934848" dependencyby="Q0w1%bk@QSI5[J+0cnEn" id="aal1~NtJMrpd:?/FK(49" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+            <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+            </mutation>
+            <value name="ARG0">
+              <block asynccall="false" colour="#934848" dependencyby="Q0w1%bk@QSI5[J+0cnEn" id="=5~gWvUnI#hD.kU_.$AL" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                <field customattributes="" name="SELECT">ASM_Denuncia.active.des_origem_denuncia</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <shadow asynccall="false" colour="#5ba593" dependencyby="C*7wpWQPaO[qr0@baP9g" id="[D6F%h8fv2@ljo7}b4o2" origintype="text" output="true" tooltip="function () { [native code] }" type="text" xmlns="">
+                <field customattributes="" name="TEXT"/>
+              </shadow>
+              <block asynccall="false" colour="#5ba593" dependencyby="Q0w1%bk@QSI5[J+0cnEn" id="?/,6B[9I/6`D8uUp0|6a" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field customattributes="" name="TEXT"/>
+              </block>
+            </value>
+            <next>
+              <block asynccall="false" colour="#934848" dependencyby="Q0w1%bk@QSI5[J+0cnEn" id="ZYqz3?0B%u7U;4/FHw!/" multilayer="true" namespace="cronapi.screen.hideComponent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EEsconder%20componente%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20esconde%20um%20componente%20da%20tela%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.hideComponent%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                <mutation name="{{cronapi.screen.hideComponent}}" return-raw-type="undefined">
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+                </mutation>
+                <value name="ARG0">
+                  <block asynccall="false" colour="#934848" dependencyby="Q0w1%bk@QSI5[J+0cnEn" id=".zVjhU;Fd%_e5atFMg`2" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                    <field customattributes="" name="SELECT">crn-textarea-descricao-origem-denuncia-149044</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="105" y="684">
+    <field customattributes="" name="NAME">procedimentosAoIniciar</field>
+    <comment h="80" pinned="false" w="160">Denuncia</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" disabled="true" id="5h|m%sVqn@`LEJ`COV+U" multilayer="true" namespace="cronapi.screen.changeValueOfField" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAlterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20alterar%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Valor%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.screen.changeValueOfField}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Campo"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Valor"/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=",v)vF(#c^WplWbJmpDwY" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+            <field customattributes="" name="SELECT">vars.var_denunciante_cidade</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="z_1{Q-@ObvNEyP*a4P]h" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT">Brasília</field>
+          </shadow>
+        </value>
+        <next>
+          <block asynccall="false" colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" disabled="true" id="EFTndLLa.UvqA!4,F6+A" multilayer="true" namespace="cronapi.screen.changeContent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EModificar%20conte%C3%BAdo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20altera%20o%20conte%C3%BAdo%20pelo%20id,%20por%20exemplo,%20o%20conte%C3%BAdo%20de%20um%20r%C3%B3tulo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Obter%20identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20(id)%20a%20ser%20obtido%20do%20Formul%C3%A1rio%20selecionado%3C/div%3E%3Cspan%3E%20-%20Conte%C3%BAdo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Compilar?%20:%20L%C3%B3gico%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeContent%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+            <mutation name="{{cronapi.screen.changeContent}}" return-raw-type="undefined">
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Obter identificador"/>
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Conteúdo"/>
+              <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Compilar?"/>
+            </mutation>
+            <value name="ARG0">
+              <block asynccall="false" colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id=".mP/ch}xC{:?Y{(5*Uxv" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                <field customattributes="" name="SELECT">input3243</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="sKwK+%!X+FvLe^Y;8mPh" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field customattributes="" name="TEXT">Brasília</field>
+              </shadow>
+            </value>
+            <value name="ARG2">
+              <block asynccall="false" colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="f[sJ+FiDipl$fTC1buvO" origintype="util_dropdown" output="true" type="util_dropdown">
+                <mutation>
+                  <arg name="false" value="Falso"/>
+                  <arg name="true" value="Verdadeiro"/>
+                </mutation>
+                <field customattributes="" name="SELECT">true</field>
+              </block>
+            </value>
+            <next>
+              <block asynccall="false" colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" disabled="true" id="{g6z8dag-ATwM?@}d%,." multilayer="true" namespace="cronapi.screen.changeContent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EModificar%20conte%C3%BAdo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20altera%20o%20conte%C3%BAdo%20pelo%20id,%20por%20exemplo,%20o%20conte%C3%BAdo%20de%20um%20r%C3%B3tulo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Obter%20identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20(id)%20a%20ser%20obtido%20do%20Formul%C3%A1rio%20selecionado%3C/div%3E%3Cspan%3E%20-%20Conte%C3%BAdo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Compilar?%20:%20L%C3%B3gico%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeContent%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                <mutation name="{{cronapi.screen.changeContent}}" return-raw-type="undefined">
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Obter identificador"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Conteúdo"/>
+                  <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Compilar?"/>
+                </mutation>
+                <comment h="118" pinned="false" w="519">Como o campo é vinculado ao campo do datasource, vai pegar do valor padrão que está na consulta qryListaDenuncias.
+
+Se o campo fosse uma variável que depois você pegasse e subisse no datasource, aí sim, poderia preencher com um fluxo. Mas você substitui o mecanismo dos botões e tudo o mais fica por sua conta.</comment>
+                <value name="ARG0">
+                  <block asynccall="false" colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="e5myOPaLJO[naGg*B]`Z" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                    <field customattributes="" name="SELECT">textinput-data_criacao</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="sKwK+%!X+FvLe^Y;8mPh" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field customattributes="" name="TEXT"/>
+                  </shadow>
+                  <block asynccall="true" colour="#487f7f" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="-z:a1I=~T)p;Eas#_-J[" multilayer="false" namespace="cronapi.util.callServerBlockly" origintype="procedures_callblockly_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EChamar%20Bloco%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20chamar%20bloco%20de%20programa%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Nome%20da%20fun%C3%A7%C3%A3o%20do%20bloco%20que%20dever%C3%A1%20ser%20chamada%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.util.callServerBlockly%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callblockly_callreturn">
+                    <mutation data="%7B%22name%22:%22GeralClientSide%22,%22class%22:%22src/main/webapp/js/blockly/GeralClientSide%22,%22function%22:%22obterDataEHoraAtual%22,%22oldName%22:%22obterDataEHoraAtual%22,%22params%22:%22%5B%5D%22,%22type%22:%22js%22,%22namespace%22:%22js.blockly.GeralClientSide%22,%22jsonBlocklySelected%22:%7B%22namespace%22:%22js.blockly.GeralClientSide%22,%22sourcePath%22:%22src/main/webapp/js/blockly/GeralClientSide.blockly%22,%22language%22:%22js%22,%22class%22:%22src/main/webapp/js/blockly/GeralClientSide%22,%22methods%22:%5B%7B%22name%22:%22obterDataAtualSemHora%22,%22hasReturn%22:%22true%22,%22params%22:%5B%5D%7D,%7B%22name%22:%22obterDataEHoraAtual%22,%22hasReturn%22:%22true%22,%22params%22:%5B%5D%7D%5D%7D%7D" name="{{cronapi.util.callServerBlockly}}"/>
+                  </block>
+                </value>
+                <value name="ARG2">
+                  <block asynccall="false" colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="BDIt)a6v1%xdAHhr?e$L" origintype="util_dropdown" output="true" type="util_dropdown">
+                    <mutation>
+                      <arg name="false" value="Falso"/>
+                      <arg name="true" value="Verdadeiro"/>
+                    </mutation>
+                    <field customattributes="" name="SELECT">true</field>
+                  </block>
+                </value>
+                <next>
+                  <block asynccall="false" colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" disabled="true" id="RX1pv6MEFFu,;aDFEScx" multilayer="true" namespace="cronapi.screen.changeContent" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EModificar%20conte%C3%BAdo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20altera%20o%20conte%C3%BAdo%20pelo%20id,%20por%20exemplo,%20o%20conte%C3%BAdo%20de%20um%20r%C3%B3tulo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Obter%20identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20(id)%20a%20ser%20obtido%20do%20Formul%C3%A1rio%20selecionado%3C/div%3E%3Cspan%3E%20-%20Conte%C3%BAdo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Compilar?%20:%20L%C3%B3gico%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.changeContent%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+                    <mutation name="{{cronapi.screen.changeContent}}" return-raw-type="undefined">
+                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Obter identificador"/>
+                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.STRING" name="Conteúdo"/>
+                      <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Compilar?"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block asynccall="false" colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="n;(,X0oZg4C7.WGzmo{O" origintype="ids_from_screen" output="true" type="ids_from_screen">
+                        <field customattributes="" name="SELECT">textinput-login_inclusao_denuncia</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="sKwK+%!X+FvLe^Y;8mPh" origintype="text" output="true" tooltip="function () { [native code] }" type="text" xmlns="">
+                        <field customattributes="" name="TEXT"/>
+                      </shadow>
+                      <block asynccall="true" colour="#487f7f" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="!^xzi!7Tn!uJgC8,9GE+" multilayer="false" namespace="cronapi.util.callServerBlockly" origintype="procedures_callblockly_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EChamar%20Bloco%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20chamar%20bloco%20de%20programa%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Nome%20da%20fun%C3%A7%C3%A3o%20do%20bloco%20que%20dever%C3%A1%20ser%20chamada%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.util.callServerBlockly%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callblockly_callreturn">
+                        <mutation data="%7B%22name%22:%22GeralServerSide%22,%22class%22:%22blockly.GeralServerSide%22,%22function%22:%22obterUsuarioLogado%22,%22oldName%22:%22obterUsuarioLogado%22,%22params%22:%22%5B%5D%22,%22type%22:%22java%22,%22namespace%22:%22blockly.GeralServerSide%22,%22jsonBlocklySelected%22:%7B%22namespace%22:%22blockly.GeralServerSide%22,%22sourcePath%22:%22src/main/java/blockly/GeralServerSide.blockly%22,%22language%22:%22java%22,%22class%22:%22blockly.GeralServerSide%22,%22methods%22:%5B%7B%22name%22:%22obterUsuarioLogado%22,%22hasReturn%22:%22true%22,%22params%22:%5B%5D%7D%5D%7D%7D" name="{{cronapi.util.callServerBlockly}}"/>
+                      </block>
+                    </value>
+                    <value name="ARG2">
+                      <block asynccall="false" colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="GqT=`(0bZ)_4kmZa.8U#" origintype="util_dropdown" output="true" type="util_dropdown">
+                        <mutation>
+                          <arg name="false" value="Falso"/>
+                          <arg name="true" value="Verdadeiro"/>
+                        </mutation>
+                        <field customattributes="" name="SELECT">true</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block asynccall="false" colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" disabled="true" id="Oc(3Qptx_ae}sgK@8q=)" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                        <value name="TEXT">
+                          <shadow asynccall="false" colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="d%*EJsfBq`lqn^EIs%B5" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                            <field customattributes="" name="TEXT">abc</field>
+                          </shadow>
+                          <block asynccall="true" colour="#487f7f" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="5;c6`kSCBKI8}UKkX~dl" multilayer="false" namespace="cronapi.util.callServerBlockly" origintype="procedures_callblockly_callreturn" output="true" returntype="ObjectType.OBJECT" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EChamar%20Bloco%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20chamar%20bloco%20de%20programa%C3%A7%C3%A3o%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Nome%20da%20fun%C3%A7%C3%A3o%20do%20bloco%20que%20dever%C3%A1%20ser%20chamada%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Objeto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.util.callServerBlockly%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callblockly_callreturn">
+                            <mutation data="%7B%22name%22:%22GeralClientSide%22,%22class%22:%22src/main/webapp/js/blockly/GeralClientSide%22,%22function%22:%22obterDataEHoraAtual%22,%22oldName%22:%22obterDataEHoraAtual%22,%22params%22:%22%5B%5D%22,%22type%22:%22js%22,%22namespace%22:%22js.blockly.GeralClientSide%22,%22jsonBlocklySelected%22:%7B%22namespace%22:%22js.blockly.GeralClientSide%22,%22sourcePath%22:%22src/main/webapp/js/blockly/GeralClientSide.blockly%22,%22language%22:%22js%22,%22class%22:%22src/main/webapp/js/blockly/GeralClientSide%22,%22methods%22:%5B%7B%22name%22:%22obterDataAtualSemHora%22,%22hasReturn%22:%22true%22,%22params%22:%5B%5D%7D,%7B%22name%22:%22obterDataEHoraAtual%22,%22hasReturn%22:%22true%22,%22params%22:%5B%5D%7D%5D%7D%7D" name="{{cronapi.util.callServerBlockly}}"/>
+                          </block>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" id="G?Z6nTS`9-jL6xmvGg.~" origintype="procedures_defnoreturn" output="false" tooltip="Cria uma função que não tem retorno." type="procedures_defnoreturn" x="158" y="743">
+    <field customattributes="" name="NAME">upload</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#934848" dependencyby="G?Z6nTS`9-jL6xmvGg.~" id="g`LRQ=cO5rHG=3h9=C,," multilayer="true" namespace="cronapi.screen.refreshDatasource" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EAtualizar%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20atualiza%20uma%20fonte%20de%20dados,%20mantendo%20ou%20n%C3%A3o%20os%20filtros%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Fonte%20de%20dados%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Manter%20filtro(s)?%20%20:%20L%C3%B3gico%3C/span%3E%3Cdiv%3E%20Caso%20verdadeiro,%20mant%C3%A9m%20os%20filtros%20existentes%20na%20fonte%20de%20dados%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.refreshDatasource%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.screen.refreshDatasource}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Fonte de dados"/>
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.BOOLEAN" name="Manter filtro(s)? "/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#934848" dependencyby="G?Z6nTS`9-jL6xmvGg.~" id="d^RjU:EfTGW5NT)3r(kL" origintype="datasource_from_screen" output="true" type="datasource_from_screen">
+            <field customattributes="" name="SELECT">ASM_Denuncia</field>
+          </block>
+        </value>
+        <value name="ARG1">
+          <block asynccall="false" colour="#934848" dependencyby="G?Z6nTS`9-jL6xmvGg.~" id="2bhn*.(}vNA2Eu+q3-EA" origintype="util_dropdown" output="true" type="util_dropdown">
+            <mutation>
+              <arg name="true" value="Verdadeiro"/>
+              <arg name="false" value="Falso"/>
+            </mutation>
+            <field customattributes="" name="SELECT">true</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" id="bFy*59z=8BkUS]eR*Rx8" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="233" y="818">
+    <mutation>
+      <arg name="informacao"/>
+    </mutation>
+    <field customattributes="" name="NAME">preencherNomeExtensaoArquivoNaModal</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#5ba58c" dependencyby="bFy*59z=8BkUS]eR*Rx8" id="g(n4Y/n{Rm`x|`~wH)!_" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+        <value name="TEXT">
+          <shadow asynccall="false" colour="#5ba593" dependencyby="bFy*59z=8BkUS]eR*Rx8" id="B}R(hkI9w`p]5Md;[sci" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+            <field customattributes="" name="TEXT">abc</field>
+          </shadow>
+          <block asynccall="false" colour="#0088ee" dependencyby="bFy*59z=8BkUS]eR*Rx8" id="-w-Wym*bA(aVkewK_Oz8" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+            <field customattributes="" name="VAR">informacao</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block asynccall="false" colour="#fca03b" id="M9^wszizz.AM1RE1?b{:" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="253" y="864">
+    <field customattributes="" name="NAME">esconderModalAnexoGrid</field>
+    <comment h="80" pinned="false" w="160">Descreva esta função...</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#934848" dependencyby="M9^wszizz.AM1RE1?b{:" id="N_V={(rnQ~5#R?t-BoHN" multilayer="true" namespace="cronapi.screen.hideModal" origintype="procedures_callnoreturn" output="false" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EEsconder%20modal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20esconde%20um%20modal%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Identificador%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Identificador%20do%20componente%20a%20ser%20modificado%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.camara.leg.br//help?type=blockly&amp;amp;id=cronapi.screen.hideModal%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callnoreturn">
+        <mutation name="{{cronapi.screen.hideModal}}" return-raw-type="undefined">
+          <arg cronapi-raw-type="undefined" cronapi-type="ObjectType.OBJECT" name="Identificador"/>
+        </mutation>
+        <value name="ARG0">
+          <block asynccall="false" colour="#934848" dependencyby="M9^wszizz.AM1RE1?b{:" id="X|opIg#sJY|0Pgb+*zRH" origintype="ids_from_screen" output="true" type="ids_from_screen">
+            <field customattributes="" name="SELECT">modalASM_AnexoGrid</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block asynccall="false" colour="#5b80a5" dependencyby="M9^wszizz.AM1RE1?b{:" id="+JS?v;I4%.I9i-0_^rBg" origintype="logic_null" output="true" tooltip="Retorna nulo." type="logic_null"/>
+    </value>
+  </block>
+</blockly>

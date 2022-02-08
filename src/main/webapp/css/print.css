@@ -1,0 +1,73 @@
+@media print {
+    header, .footer, .notPrintable, .crn-rodape, .k-icon.k-i-arrow-60-down, .k-header.k-grid-toolbar > .k-button,
+    .fa-info-circle {
+        display: none;
+    }
+    #info-relatorio .col-md-6{
+        width: 100%;
+    }
+
+    #info-relatorio > .col-md-2{
+        width: 33%;
+        float: left;
+    }
+
+    .menu-lateral ul:first-child {
+        float: left;
+        margin-top: -11%;
+        margin-bottom: 10%;
+    }
+
+    #conteudo-relatorio {
+        margin-top: -8%;
+    }
+
+    * {
+        background:transparent !important;
+        color:#000 !important;
+        text-shadow:none !important;
+        filter:none !important;
+        -ms-filter:none !important;
+    }
+
+    body {
+        margin:0;
+        padding:0;
+        line-height: 1.4em;
+    }
+
+    textarea {
+        margin: 0px !important;
+        width: 100% !important;
+        font-size: 1.2rem !important;
+        overflow: hidden !important;
+    }
+
+    .crn-custom-header--nome .pointer {
+        text-align: center;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    body {
+        font: 12pt Georgia, "Times New Roman", Times, serif;
+        color: #000;
+    }
+
+    h1 {
+        font-size: 24pt;
+        width: 50%;
+        float: left;
+    }
+
+    h2 {
+        font-size: 18pt;
+    }
+
+    h3 {
+        font-size: 14pt;
+    }
+
+}

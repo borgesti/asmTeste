@@ -1,0 +1,396 @@
+[
+  {
+    "gluonsoftId": "00000000-D41D8CD98F00B204E9800998ECF8427E",
+    "versionId": "00000000-D41D8CD98F00B204E9800998ECF8427E",
+    "name": "",
+    "version": "--",
+    "dateAdded": "--"
+  },
+  {
+    "gluonsoftId": "C9B0CE7F-A00E-4F4A-8C3A-9EC394207096",
+    "versionId": "42467B5D-0FE1-4420-8449-0DF6E3050100",
+    "name": "Camara Template Web/Mobile",
+    "version": "1.0.2",
+    "dateAdded": "2021-11-30 19:57:45",
+    "filesAdded": [
+      {
+        "name": "file.png",
+        "path": "/src/main/webapp/img/file.png"
+      },
+      {
+        "name": "style.min.css",
+        "path": "/src/main/webapp/img/style.min.css"
+      },
+      {
+        "name": "logo_camara_peq.png",
+        "path": "/src/main/webapp/img/logo_camara_peq.png"
+      },
+      {
+        "name": "bg_topo.png",
+        "path": "/src/main/webapp/img/bg_topo.png"
+      },
+      {
+        "name": "logo_topo_camara.png",
+        "path": "/src/main/webapp/img/logo_topo_camara.png"
+      },
+      {
+        "name": "32px.png",
+        "path": "/src/main/webapp/img/32px.png"
+      },
+      {
+        "name": "bg_rodape.png",
+        "path": "/src/main/webapp/img/bg_rodape.png"
+      },
+      {
+        "name": "ico-aviso-autocomplete.png",
+        "path": "/src/main/webapp/img/ico-aviso-autocomplete.png"
+      },
+      {
+        "name": "ajax-loader.gif",
+        "path": "/src/main/webapp/img/ajax-loader.gif"
+      },
+      {
+        "name": "40px-pic.png",
+        "path": "/src/main/webapp/img/40px-pic.png"
+      },
+      {
+        "name": "bg_header_cd_01.png",
+        "path": "/src/main/webapp/img/bg_header_cd_01.png"
+      },
+      {
+        "name": "ico-autocomplete.png",
+        "path": "/src/main/webapp/img/ico-autocomplete.png"
+      },
+      {
+        "name": "unknown.png",
+        "path": "/src/main/webapp/img/unknown.png"
+      },
+      {
+        "name": "ico-autocomplete-lista.png",
+        "path": "/src/main/webapp/img/ico-autocomplete-lista.png"
+      },
+      {
+        "name": "logo_ditec.png",
+        "path": "/src/main/webapp/img/logo_ditec.png"
+      },
+      {
+        "name": "32px-pic.png",
+        "path": "/src/main/webapp/img/32px-pic.png"
+      },
+      {
+        "name": "favicon.ico",
+        "path": "/src/main/webapp/img/favicon.ico"
+      },
+      {
+        "name": "logo-camara-transp.png",
+        "path": "/src/main/webapp/img/logo-camara-transp.png"
+      },
+      {
+        "name": "throbber.gif",
+        "path": "/src/main/webapp/img/throbber.gif"
+      },
+      {
+        "name": "40px.png",
+        "path": "/src/main/webapp/img/40px.png"
+      },
+      {
+        "name": "bg_header_cd_02.png",
+        "path": "/src/main/webapp/img/bg_header_cd_02.png"
+      },
+      {
+        "name": "cronapp-main-pic.css",
+        "path": "/src/main/webapp/css/cronapp-main-pic.css"
+      },
+      {
+        "name": "cronapp-util-pic.css",
+        "path": "/src/main/webapp/css/cronapp-util-pic.css"
+      },
+      {
+        "name": "file.png",
+        "path": "/src/main/mobileapp/www/img/file.png"
+      },
+      {
+        "name": "style.min.css",
+        "path": "/src/main/mobileapp/www/img/style.min.css"
+      },
+      {
+        "name": "logo_camara_peq.png",
+        "path": "/src/main/mobileapp/www/img/logo_camara_peq.png"
+      },
+      {
+        "name": "bg_topo.png",
+        "path": "/src/main/mobileapp/www/img/bg_topo.png"
+      },
+      {
+        "name": "logo_topo_camara.png",
+        "path": "/src/main/mobileapp/www/img/logo_topo_camara.png"
+      },
+      {
+        "name": "32px.png",
+        "path": "/src/main/mobileapp/www/img/32px.png"
+      },
+      {
+        "name": "bg_rodape.png",
+        "path": "/src/main/mobileapp/www/img/bg_rodape.png"
+      },
+      {
+        "name": "ico-aviso-autocomplete.png",
+        "path": "/src/main/mobileapp/www/img/ico-aviso-autocomplete.png"
+      },
+      {
+        "name": "ajax-loader.gif",
+        "path": "/src/main/mobileapp/www/img/ajax-loader.gif"
+      },
+      {
+        "name": "40px-pic.png",
+        "path": "/src/main/mobileapp/www/img/40px-pic.png"
+      },
+      {
+        "name": "bg_header_cd_01.png",
+        "path": "/src/main/mobileapp/www/img/bg_header_cd_01.png"
+      },
+      {
+        "name": "ico-autocomplete.png",
+        "path": "/src/main/mobileapp/www/img/ico-autocomplete.png"
+      },
+      {
+        "name": "unknown.png",
+        "path": "/src/main/mobileapp/www/img/unknown.png"
+      },
+      {
+        "name": "ico-autocomplete-lista.png",
+        "path": "/src/main/mobileapp/www/img/ico-autocomplete-lista.png"
+      },
+      {
+        "name": "logo_ditec.png",
+        "path": "/src/main/mobileapp/www/img/logo_ditec.png"
+      },
+      {
+        "name": "logo-camara-transp-green.png",
+        "path": "/src/main/mobileapp/www/img/logo-camara-transp-green.png"
+      },
+      {
+        "name": "32px-pic.png",
+        "path": "/src/main/mobileapp/www/img/32px-pic.png"
+      },
+      {
+        "name": "favicon.ico",
+        "path": "/src/main/mobileapp/www/img/favicon.ico"
+      },
+      {
+        "name": "logo-camara-transp.png",
+        "path": "/src/main/mobileapp/www/img/logo-camara-transp.png"
+      },
+      {
+        "name": "jackUm.svg",
+        "path": "/src/main/mobileapp/www/img/jackUm.svg"
+      },
+      {
+        "name": "throbber.gif",
+        "path": "/src/main/mobileapp/www/img/throbber.gif"
+      },
+      {
+        "name": "40px.png",
+        "path": "/src/main/mobileapp/www/img/40px.png"
+      },
+      {
+        "name": "bg_header_cd_02.png",
+        "path": "/src/main/mobileapp/www/img/bg_header_cd_02.png"
+      },
+      {
+        "name": "main.css",
+        "path": "/src/main/mobileapp/www/css/main.css"
+      }
+    ],
+    "filesTmp": [
+      {
+        "name": "file.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/file.png"
+      },
+      {
+        "name": "style.min.css",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/style.min.css"
+      },
+      {
+        "name": "logo_camara_peq.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/logo_camara_peq.png"
+      },
+      {
+        "name": "bg_topo.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/bg_topo.png"
+      },
+      {
+        "name": "logo_topo_camara.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/logo_topo_camara.png"
+      },
+      {
+        "name": "32px.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/32px.png"
+      },
+      {
+        "name": "bg_rodape.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/bg_rodape.png"
+      },
+      {
+        "name": "ico-aviso-autocomplete.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/ico-aviso-autocomplete.png"
+      },
+      {
+        "name": "ajax-loader.gif",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/ajax-loader.gif"
+      },
+      {
+        "name": "40px-pic.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/40px-pic.png"
+      },
+      {
+        "name": "bg_header_cd_01.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/bg_header_cd_01.png"
+      },
+      {
+        "name": "ico-autocomplete.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/ico-autocomplete.png"
+      },
+      {
+        "name": "unknown.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/unknown.png"
+      },
+      {
+        "name": "ico-autocomplete-lista.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/ico-autocomplete-lista.png"
+      },
+      {
+        "name": "logo_ditec.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/logo_ditec.png"
+      },
+      {
+        "name": "32px-pic.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/32px-pic.png"
+      },
+      {
+        "name": "favicon.ico",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/favicon.ico"
+      },
+      {
+        "name": "logo-camara-transp.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/logo-camara-transp.png"
+      },
+      {
+        "name": "throbber.gif",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/throbber.gif"
+      },
+      {
+        "name": "40px.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/40px.png"
+      },
+      {
+        "name": "bg_header_cd_02.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/img/bg_header_cd_02.png"
+      },
+      {
+        "name": "cronapp-main-pic.css",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/css/cronapp-main-pic.css"
+      },
+      {
+        "name": "cronapp-util-pic.css",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/webapp/css/cronapp-util-pic.css"
+      },
+      {
+        "name": "file.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/file.png"
+      },
+      {
+        "name": "style.min.css",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/style.min.css"
+      },
+      {
+        "name": "logo_camara_peq.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/logo_camara_peq.png"
+      },
+      {
+        "name": "bg_topo.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/bg_topo.png"
+      },
+      {
+        "name": "logo_topo_camara.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/logo_topo_camara.png"
+      },
+      {
+        "name": "32px.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/32px.png"
+      },
+      {
+        "name": "bg_rodape.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/bg_rodape.png"
+      },
+      {
+        "name": "ico-aviso-autocomplete.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/ico-aviso-autocomplete.png"
+      },
+      {
+        "name": "ajax-loader.gif",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/ajax-loader.gif"
+      },
+      {
+        "name": "40px-pic.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/40px-pic.png"
+      },
+      {
+        "name": "bg_header_cd_01.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/bg_header_cd_01.png"
+      },
+      {
+        "name": "ico-autocomplete.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/ico-autocomplete.png"
+      },
+      {
+        "name": "unknown.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/unknown.png"
+      },
+      {
+        "name": "ico-autocomplete-lista.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/ico-autocomplete-lista.png"
+      },
+      {
+        "name": "logo_ditec.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/logo_ditec.png"
+      },
+      {
+        "name": "logo-camara-transp-green.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/logo-camara-transp-green.png"
+      },
+      {
+        "name": "32px-pic.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/32px-pic.png"
+      },
+      {
+        "name": "favicon.ico",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/favicon.ico"
+      },
+      {
+        "name": "logo-camara-transp.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/logo-camara-transp.png"
+      },
+      {
+        "name": "jackUm.svg",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/jackUm.svg"
+      },
+      {
+        "name": "throbber.gif",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/throbber.gif"
+      },
+      {
+        "name": "40px.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/40px.png"
+      },
+      {
+        "name": "bg_header_cd_02.png",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/img/bg_header_cd_02.png"
+      },
+      {
+        "name": "main.css",
+        "path": "/tmp/ide-tmp/cronos/gluonsofts/42467B5D-0FE1-4420-8449-0DF6E3050100/src/main/mobileapp/www/css/main.css"
+      }
+    ]
+  }
+]

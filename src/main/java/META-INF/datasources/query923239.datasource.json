@@ -1,0 +1,117 @@
+{
+  "customId": "listagemanexos",
+  "queryName": "listagemAnexosPorNomeArquivo",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "ASM_Anexo",
+  "entityFullName": "asm.entity.ASM_Anexo",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "ASM_Anexo",
+        "namespace": "asm.entity.ASM_Anexo",
+        "alias": "a"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "a",
+        "type": "string"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [
+      {
+        "func": "get",
+        "field": "a.nome",
+        "order": "asc"
+      }
+    ],
+    "rules": {
+      "condition": "AND",
+      "rules": [],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "ide_arquivo": null,
+    "arquivo": null,
+    "data_criacao": null,
+    "extensao": null,
+    "login_criacao": null,
+    "nome": null,
+    "fk_asm_denuncia": null,
+    "fk_asm_acompanhamento": null,
+    "cod_tipo_acompanhamento": null
+  },
+  "defaultValuesProperties": {
+    "ide_arquivo": null,
+    "arquivo": null,
+    "data_criacao": null,
+    "extensao": null,
+    "login_criacao": null,
+    "nome": null,
+    "fk_asm_denuncia": null,
+    "fk_asm_acompanhamento": null,
+    "cod_tipo_acompanhamento": null
+  },
+  "security": {
+    "ide_arquivo": null,
+    "arquivo": null,
+    "data_criacao": null,
+    "extensao": null,
+    "login_criacao": null,
+    "nome": null,
+    "fk_asm_denuncia": null,
+    "fk_asm_acompanhamento": null,
+    "cod_tipo_acompanhamento": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/asm/query923239/",
+  "audit": true
+}
